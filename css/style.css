@@ -664,7 +664,8 @@ background-clip: text;
     /* margin: 0px; */
 }
 
-#resume {
+#resume-section {
+	
 	margin: 50px;
     position: relative;
 	height: fit-content;
