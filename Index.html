@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Interact</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- AppModel -->
+  <link rel="manifest" href="json/manifest.json">
+
+  <!-- Favicons
+    ================================================== -->
+  <link rel="icon" type="image/png" href="img/piletter.png">
+  <link rel="shortcut icon" href="img/piletter.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+  <!-- Stylesheet
+    ================================================== -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <!-- Rest styles -->
+  <link rel="stylesheet" type="text/css" href="css/intro-canvas.css">
+  <link rel="stylesheet" type="text/css" href="css/resume.css">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div id="bg">
+    <canvas></canvas>
+    <canvas></canvas>
+    <canvas></canvas>
+  </div>
+  <!-- Navigation
+    ==========================================-->
+  <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
+            class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand page-scroll" href="#page-top">ΟΦΘΑΛΜΙΑΤΡΕΙΟ ΓΚΟΝΤΟΛΙΑΣ</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="page-scroll">ΠΡΟΦΙΛ</a></li>
+          <li><a href="#" class="page-scroll">ΜΕ ΜΙΑ ΜΑΤΙΑ</a></li>
+          <li><a href="#" class="page-scroll">ΥΠΗΡΕΣΙΕΣ</a></li>
+          <li><a href="#" class="page-scroll">Ο ΙΑΤΡΟΣ</a></li>
+          <li><a href="#" class="page-scroll">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+  <!-- Header -->
+  <header id="header">
+    <div class="intro">
+      <div class="overlay">
+        <div style="height: 200px;"></div>
+        <div class="container" id="intro-paragraph">
+          <div class="flex-container">
+            <div class="flex-container">
+              <div class="intro-text">
+                <h1>ΣΤΕΡΓΙΟΣ ΓΚΟΝΤΟΛΙΑΣ</h1>
+                <ul>
+                  <li>Ο χειρουργός οφθαλμίατρος Στέργιος Γκοντόλιας αποφοίτησε από το 2ο Λύκειο Ξάνθης.</li>
+                  <li>Έλαβε το πτυχίο Ιατρικής από το Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης (όπου εισήχθη μετά από
+                    επιτυχείς Πανελλήνιες εξετάσεις) και ολοκλήρωσε την ειδικότητα της οφθαλμολογίας στο Πανεπιστημιακό
+                    Νοσοκομείο Ηρακλείου Κρήτης.</li>
+                  <li>Εργάστηκε ως Επιμελητής Οφθαλμολογίας ΕΣΥ στα Γενικά Νοσοκομεία Ρεθύμνου (2 έτη) και Χανίων (6
+                    έτη), όπου αποκόμισε σημαντική κλινική και χειρουργική εμπειρία στη διάγνωση και αντιμετώπιση
+                    οφθαλμικών παθήσεων, ιδίως όσον αφορά τη χειρουργική αφαίρεση του καταρράκτη (φακοθρυψία με
+                    υπερήχους).</li>
+                  <li>Τα τελευταία 4 έτη διατηρεί ένα σύγχρονο και οργανωμένο ιατρείο στο κέντρο των Χανίων.</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container" id="intro-profile-pic">
+          <div id="profile-pic"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="content-wrapper"> <!-- New parent div -->
+          <!-- Carousel -->
+          <div class="carousel">
+            <img class="carousel-image" src="img/photo3.jpg">
+            <img class="carousel-image" src="img/photo4.jpg">
+            <img class="carousel-image" src="img/photo5.jpg">
+            <img class="carousel-image" src="img/photo6.jpg">
+            <img class="carousel-image" src="img/photo8.jpg">
+
+          </div>
+          <!-- ---------- -->
+          <div class="col-xs-12 col-md-6">
+            <div class="about-text">
+              <h2 class="coloured-faded-text">Με μια ματια</h2>
+              <div class="list-style">
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                  <ul>
+                    <li>Αποκόλληση αμφιβληστροειδούς</li>
+                    <li>Αστιγματισμός</li>
+                    <li>Εγχείρηση καταρράκτη</li>
+                    <li>Επιπεφυκίτιδα</li>
+                    <li>Οφθαλμολογικός Έλεγχος</li>
+                    <li>Laser Μυωπίας</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End of new parent div -->
+      </div>
+    </div>
+  </div>
+  <!-- services Section -->
+  <div id="services">
+    <div class="container" id="services-container">
+      <div class="row" id="service-row1">
+        <div class="content-wrapper"> <!-- New parent div -->
+          <!-- ---------- -->
+          <div class="col-xs-12 col-md-6">
+            <div class="services-text">
+              <h2 class="coloured-faded-text">ΛΟΓΟΣ ΕΠΙΣΚΕΨΗΣ</h2>
+              <div class="list-style">
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                  <ul>
+                    <li>Αστιγματισμός</li>
+                    <li>Έλεγχος γλαυκώματος</li>
+                    <li>Έλεγχος διαβητικής αμφιβληστροειδοπάθειας</li>
+                    <li>Επιπεφυκίτιδα</li>
+                    <li>Θολή όραση</li>
+                    <li>Καταρράκτης</li>
+                    <li>Μυωπία</li>
+                    <li>Οφθαλμολογικές φλεγμονές</li>
+                    <li>Πρεσβυωπία</li>
+                    <li>Στραβισμός</li>
+                    <li>Υπερμετρωπία</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End of new parent div -->
+        <div class="content-wrapper"> <!-- New parent div -->
+          <!-- ---------- -->
+          <div class="col-xs-12 col-md-6" id="services-second-ul">
+            <div class="services-text">
+              <h2 class="coloured-faded-text">ΕΞΕΤΑΣΕΙΣ</h2>
+              <div class="list-style">
+                <div class="col-lg-6 col-sm-6 col-xs-12">
+                  <ul>
+                    <li>Έλεγχος αστιγματισμού</li>
+                    <li>Έλεγχος γλαυκώματος</li>
+                    <li>Έλεγχος καταρράκτη</li>
+                    <li>Έλεγχος μυωπίας</li>
+                    <li>Έλεγχος υπερμετρωπίας</li>
+                    <li>Έλεγχος χρωματικής αντίληψης</li>
+                    <li>Παχυμετρία κερατοειδούς</li>
+                    <li>Τονομέτρηση</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End of new parent div -->
+        <div id="services-pic"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Resume Section -->
+  <div id="resume">
+    <div class="container" id="resume-container">
+      <div id="resume">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/james-moriarty.jpg" alt="Στέργιος Γκοντόλιας">
+        <h1>Στέργιος Δήμου Γκοντόλιας</h1>
+        <p>Ο Στέργιος Δήμου Γκοντόλιας είναι οφθαλμίατρος με πλούσια εμπειρία και εξειδίκευση. Αποφοίτησε από την Ιατρική Σχολή του Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης
+           το 1997 και ολοκλήρωσε την ειδικότητα της οφθαλμολογίας στο Πανεπιστημιακό Νοσοκομείο Ηρακλείου Κρήτης το 2009. Έχει εργαστεί ως Επιμελητής Οφθαλμολογίας ΕΣΥ
+            στα Γενικά Νοσοκομεία Ρεθύμνου και Χανίων, αποκτώντας σημαντική κλινική και χειρουργική εμπειρία. Η εξειδίκευσή του περιλαμβάνει χειρουργική καταρράκτη, διαβητική
+             αμφιβληστροειδοπάθεια, γλαύκωμα και παθήσεις βυθού. Έχει συμμετάσχει σε 10 ανακοινώσεις σε συνέδρια και έχει δημοσιεύσει 2 άρθρα σε έγκριτα ελληνικά περιοδικά.</p>
+        <dl>
+          <dt>Επικοινωνία</dt>
+          <dd>
+            <ul>
+              <li>Ιδιωτικό Ιατρείο: Κ. Μητσοτάκη 38, Δικαστήρια, 73132 Χανιά, Κρήτη</li>
+              <li>Τηλέφωνο: 28210-50396, 6974701928</li>
+              <li>Email: [email protected]</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Εκπαίδευση</dt>
+          <dd>
+            <ul>
+              <li>Πτυχίο Ιατρικής: Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης (ΑΠΘ), 1997</li>
+              <li>Ειδικότητα Οφθαλμολογίας: Πανεπιστημιακό Νοσοκομείο Ηρακλείου Κρήτης, 2009</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Επαγγελματική Εμπειρία</dt>
+          <dd>
+            <ul>
+              <li>Ιδιώτης Οφθαλμίατρος: Χανιά, Κρήτη (2019-σήμερα)</li>
+              <li>Επικουρικός Επιμελητής Β’ Οφθαλμολογικής Κλινικής: Γενικό Νοσοκομείο Χανίων (2014-2018)</li>
+              <li>Επικουρικός Επιμελητής Β’ Οφθαλμολογικής Κλινικής: Γενικό Νοσοκομείο Ρεθύμνου (2009-2012)</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Εξειδίκευση</dt>
+          <dd>
+            <ul>
+              <li>Χειρουργική Καταρράκτη: Πραγματοποίηση άνω των 687 επεμβάσεων αφαίρεσης καταρράκτη.</li>
+              <li>Διαβητική Αμφιβληστροειδοπάθεια: Διάγνωση και θεραπεία με ενδοβολβικές ενέσεις Lucentis.</li>
+              <li>Γλαύκωμα: Διάγνωση και παρακολούθηση με χρήση οπτικών πεδίων και παχυμετρίας.</li>
+              <li>Παθήσεις Βυθού: Διάγνωση και θεραπεία με φλουοροαγγειογραφία και argon laser φωτοπηξία.</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Ερευνητική Δραστηριότητα</dt>
+          <dd>
+            <ul>
+              <li>Συμμετοχή σε 10 ανακοινώσεις: 7 σε μη διεθνή συνέδρια και 3 σε διεθνή συνέδρια.</li>
+              <li>Δημοσιεύσεις: 2 δημοσιεύσεις σε έγκριτα ελληνικά περιοδικά.</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Επιμόρφωση</dt>
+          <dd>
+            <ul>
+              <li>Συμμετοχή σε 409 CME-CPD credits: Διεθνή και πανελλήνια συνέδρια, κλινικά φροντιστήρια.</li>
+              <li>Εκπαίδευση Ειδικευομένων: Συμμετοχή στην εκπαίδευση ειδικευομένων σε Οφθαλμολογικές κλινικές.</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Γλώσσες</dt>
+          <dd>
+            <ul>
+              <li>Αγγλικά: Certificate of Proficiency in English (ECPE), Certificate in Advanced English (Level C1), First Certificate in English.</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="container">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="section-title">
+            <h2>Επικοινωνηστε μαζι μας</h2>
+            <p>Παρακαλούμε συμπληρώστε την παρακάτω φόρμα για να μας στείλετε ένα email και θα επικοινωνήσουμε μαζί σας
+              το συντομότερο δυνατό.</p>
+          </div>
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" id="name" class="form-control" placeholder="Όνομα" required="required">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" class="form-control" rows="4" placeholder="Μήνυμα"
+                required></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+            <div id="success"></div>
+            <button type="submit" class="btn btn-custom btn-lg">Αποστολή Μηνύματος</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-3 col-md-offset-1 contact-info">
+        <div class="contact-item">
+          <h3>Πληροφορίες Επικοινωνίας</h3>
+          <p><span><i class="fa fa-map-marker"></i> Διεύθυνση</span>Οδός Παπαδιαμάντη 123,<br>
+            Αθήνα, Ελλάδα 12345</p>
+        </div>
+        <div class="contact-item">
+          <p><span><i class="fa fa-phone"></i> Τηλέφωνο</span> +30 210 123 4567</p>
+        </div>
+        <div class="contact-item">
+          <p><span><i class="fa fa-envelope-o"></i> Email</span> info@physiotherapy.gr</p>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="social">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <div id="footer">
+    <div class="container text-center">
+      <p>Designed by TemplateWire Distributed By: <a class="" href="https://htmltemplates.co" target="_blank">HTML
+          Templates</a></p>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/SmoothScroll.js"></script>
+  <script type="text/javascript" src="js/nivo-lightbox.js"></script>
+  <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+  <script type="text/javascript" src="js/contact_me.js"></script>
+  <script type="text/javascript" src="js/index2.js"></script>
+  <script type="text/javascript" src="js/carousel.js"></script>
+  <script type="text/javascript" src="js/intro-canvas.js"></script>
+</body>
+
+</html>
