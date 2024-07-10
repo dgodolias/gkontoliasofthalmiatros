@@ -451,19 +451,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
     -o-background-size: cover;
 }
-
-#intro-container {
-	justify-content: center;
-	margin: 0px;
-    width: -webkit-fill-available;
-}
-
 .intro .overlay {
-	height: fit-content;
-	justify-content: center;
-	align-items: center;
-	background: rgba(0, 0, 0, 0.2);
-	display: flex;
+	height: 800px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
 }
 
 .overlay > *:first-child {
@@ -794,8 +787,8 @@ background-clip: text;
     }
 
     #profile-pic, #services-pic {
-        width: 300px;
-        height: 200px;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -845,20 +838,6 @@ background-clip: text;
 	margin:0px;
 		
 	}
-
-	#intro-container {
-    height: 100%;
-}
-
-	#intro-profile-pic {
-    width: 400px;
-    height: 300px;
-}
-
-	#intro-container {
-    margin-top: 150px;
-    /* height: 100%; */
-}
 }
 
 /* Other Styles Remain Unchanged */
