@@ -65,6 +65,7 @@ img {
 
 .mb-4 {
     margin-bottom: 1.5rem !important;
+    font-size: medium;
 }
 
 .info-wrap .dbox {
@@ -78,6 +79,7 @@ img {
 
 .info-wrap .dbox p {
     margin-bottom: 0;
+    font-size: medium;
 }
 
 .info-wrap .dbox p span {
@@ -87,6 +89,7 @@ img {
 
 .info-wrap .dbox p a {
     color: rgba(0, 0, 0, 0.3);
+    font-size: medium;
 }
 
 .info-wrap .dbox .icon {
