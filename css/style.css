@@ -521,18 +521,22 @@ li {
 	justify-content: space-between; /* Optional: Adds space between the carousel and about text */
 }
 .carousel {
-	height: 430px; /* Adjust this value as needed */
+	/* align-items: center; */
+	/* justify-content: center; */
+	margin: auto;
+	height: 300px; /* Adjust this value as needed */
+	width: 300px;
 	overflow: hidden; /* Hide anything that goes outside the carousel */
 	border-radius: 15px;
 	flex: 1;
 	max-width: 500px; /* Adjust this value as needed */
 	position: relative; /* Add relative positioning */
-  }
+	}
   
   .carousel img {
-	height: 100%;
+	height: auto;
 	width: 100%;
-	object-fit: cover;
+	object-fit: fill;
 	object-position: top left;
 	opacity: 0;
 	position: absolute;
@@ -540,7 +544,7 @@ li {
 	left: 0;
 	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 	transform: translateX(100%) scale(0.5);
-  }  
+	}  
 
 .coloured-faded-text {
     /* Apply the same linear gradient */
@@ -603,7 +607,7 @@ background-clip: text;
 #about .about-text li:before {
 	/* Remove or comment out this block if not needed */
 }
-#about img {
+#carousel img {
 	width: 400px;
 	background: #dfdfdf;
 	border-right: 0;
@@ -842,6 +846,10 @@ background-clip: text;
 	height:fit-content
 	}
 
+	#about{
+		padding:100px 0px;
+	}
+
 	#about .container {
 	margin:0px;
 		
@@ -859,6 +867,10 @@ background-clip: text;
 	#intro-container {
     margin-top: 150px;
     /* height: 100%; */
+}
+
+#about-container {
+    display: block;
 }
 }
 
