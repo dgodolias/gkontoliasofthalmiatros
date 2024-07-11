@@ -88,8 +88,14 @@ img {
 }
 
 .info-wrap .dbox p a {
-    color: rgba(0, 0, 0, 0.3);
+    color: blue; /* Default link color */
+    text-decoration: underline; /* Makes it look like a link */
+    cursor: pointer; /* Changes cursor to pointer to indicate it's clickable */
+  
     font-size: medium;
+}
+.info-wrap .dbox p a:active {
+    color: purple;
 }
 
 .info-wrap .dbox .icon {
