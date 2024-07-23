@@ -1132,6 +1132,7 @@ li {
 	}
 
 	.flex-container {
+		/* width: 100vh; */
 		flex-direction: column;
 		align-items: center;
 	}
@@ -1147,7 +1148,8 @@ li {
 	}
 
 	h1 {
-		font-size: 90px;
+		/* margin: 60px; */
+		font-size: 60px;
 	}
 
 	h2 {
@@ -1160,6 +1162,8 @@ li {
 	}
 
 	#menu a.navbar-brand {
+		line-height: normal;
+		height: fit-content;
 		font-size: 30px;
 	}
 
@@ -1178,10 +1182,14 @@ li {
 		/* margin-left: 0px; */
 
 		.row {
-			margin-right: 0px;
-			margin-left: 0px;
+		margin-right: 0px;
+		margin-left: 0px;
 		}
 	}
+
+	#services li {
+    font-size:20px;
+}
 
 	#intro-paragraph {
 		width: 100%;
@@ -1209,7 +1217,7 @@ li {
 	}
 
 	#intro-container {
-		margin-top: 150px;
+		margin-top: 250px;
 		/* height: 100%; */
 	}
 
