@@ -1144,6 +1144,7 @@ li {
 	}
 
 	li {
+		width: 100%;
 		font-size: 25px;
 	}
 
@@ -1188,7 +1189,7 @@ li {
 	}
 
 	#services li {
-    font-size:20px;
+    font-size:18px;
 }
 
 	#intro-paragraph {
@@ -1226,6 +1227,7 @@ li {
 	}
 
 	#services .col-xs-12.col-md-6 {
+		padding-right: 0px;
 		width: 100%;
 	}
 
@@ -1250,6 +1252,11 @@ li {
 	#resume p {
 		font-size: 30px;
 		line-height:1.2;
+	}
+
+	#resume dl {
+		width: 100%;
+		display: grid;
 	}
 
 	#contact iframe {
