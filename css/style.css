@@ -323,8 +323,8 @@ a:focus {
 
 ul,
 ol {
+	/* margin-left: 20px; */
 	padding: 0;
-
 }
 
 hr {
@@ -589,6 +589,9 @@ a:focus,
 }
 
 li {
+	word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
 	color: white;
 }
 
@@ -634,6 +637,7 @@ li {
 
 .coloured-faded-text {
 	/* Apply the same linear gradient */
+	width: fit-content;
 	background: linear-gradient(to right, #9ca5ff 0%, #64cf94 100%);
 	/* Use the background as the text color */
 	-webkit-background-clip: text;
@@ -755,12 +759,16 @@ li {
 	/* Adds space to the right of the first child, effectively moving the content slightly to the right */
 }
 
+.services-text {
+    margin: 30px;
+}
+
 #services-second-ul {
 	margin-top: -60px;
 }
 
 #services li {
-	width: max-content;
+	width: fit-content;
 }
 
 #services-pic {
@@ -1026,11 +1034,12 @@ li {
 	}
 
 	#services-container>*:first-child {
+		display: grid;
 		/* margin-left: 0px; */
 
 		.row {
-			margin-right: 0px;
-			margin-left: 0px;
+		margin-right: 0px;
+		margin-left: 0px;
 		}
 	}
 
@@ -1188,7 +1197,7 @@ li {
 		}
 	}
 
-	#services li {
+	li {
     font-size:18px;
 }
 
