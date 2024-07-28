@@ -324,7 +324,6 @@ a:focus {
 ul,
 ol {
 	padding: 0;
-
 }
 
 li {
@@ -690,7 +689,7 @@ li {
 }
 
 .intro-profile-pic {
-	margin-right: 20px;
+	/* margin-right: 20px; */
 	margin-top: 30px;
 	align-items: center;
 	justify-content: center;
@@ -911,7 +910,7 @@ li {
 	}
 
 	.intro-profile-pic {
-		margin-right: 20px;
+		/* margin-right: 20px; */
 		width: 400px;
 		height: 300px;
 	}
@@ -1133,7 +1132,7 @@ li {
 
 	#profile-pic,
 	#services-pic {
-		width: 375px;
+		width: 275px;
 		height: 250px;
 	}
 
@@ -1232,7 +1231,7 @@ li {
 	}
 
 	#services li{
-		width:auto;
+		width: auto;
 	}
 
 	#service-row1 {
