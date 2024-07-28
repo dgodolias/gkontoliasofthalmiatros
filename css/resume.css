@@ -1,4 +1,5 @@
 #resume {
+  border-radius: 20px;
   margin: 30px;
   background: white;
   padding:30px;
@@ -33,6 +34,7 @@
   font-weight: normal
 }
 #resume p {
+  font-weight: bold;
   color:rgb(0,0,0);
   margin: 0 0 16px 0
 }
