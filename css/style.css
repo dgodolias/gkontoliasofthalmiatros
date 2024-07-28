@@ -327,6 +327,13 @@ ol {
 
 }
 
+li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+
 hr {
 	height: 2px;
 	width: 70px;
@@ -634,6 +641,7 @@ li {
 
 .coloured-faded-text {
 	/* Apply the same linear gradient */
+	width: fit-content;
 	background: linear-gradient(to right, #9ca5ff 0%, #64cf94 100%);
 	/* Use the background as the text color */
 	-webkit-background-clip: text;
@@ -667,18 +675,8 @@ li {
 	left: 0;
 }
 
-#about .about-text li {
-	margin-bottom: 6px;
-	margin-left: 6px;
-	list-style: none;
-	padding: 0;
-	color: rgb(255, 255, 255);
-}
-
-#about .about-text li {
-	list-style-type: disc;
-	/* This will create a bullet */
-
+#about li {
+	width:max-content;
 }
 
 #about .container {
@@ -714,11 +712,6 @@ li {
 	line-height: 24px;
 	margin: 30px 0;
 }
-
-#about li {
-	width: max-content;
-}
-
 
 /* service Section */
 
@@ -759,9 +752,6 @@ li {
 	margin-top: -60px;
 }
 
-#services li {
-	width: max-content;
-}
 
 #services-pic {
 	margin-left: 80px;
@@ -771,6 +761,10 @@ li {
 	background: url(../img/photo7.jpg) center no-repeat;
 	background-size: cover;
 	border-radius: 5px;
+}
+
+#services li {
+	width:max-content;
 }
 
 /* resume Section */
@@ -1144,12 +1138,13 @@ li {
 	}
 
 	li {
-		font-size: 25px;
+		margin-left: 10px;
+		font-size: 20px;
 	}
 
 	h1 {
 		/* margin: 60px; */
-		font-size: 60px;
+		font-size: 50px;
 	}
 
 	h2 {
@@ -1174,6 +1169,7 @@ li {
 	}
 
 	#service-row1 {
+		justify-content:left;
 		/* width: 100%; */
 		display: grid;
 	}
@@ -1188,6 +1184,7 @@ li {
 	}
 
 	#services li {
+		width:auto;
     font-size:20px;
 }
 
@@ -1234,6 +1231,10 @@ li {
 		height: 1500px;
 	}
 
+	#services li{
+		width:auto;
+	}
+
 	#service-row1 {
 		height: 100%;
 	}
@@ -1267,24 +1268,24 @@ li {
 	}
 
 	#contact .info-wrap h3{
-	font-size:35px;
+	font-size: 25px;
 	}
 
 	#contact .mb-4{
-	font-size:25px;
+	font-size: 18px;
 	}
 
 	#contact .info-wrap p a{
-	font-size:25px;
+	font-size: 18px;
 	}
 
 	#contact .info-wrap .dbox p span {
-		font-size:25px;
+		font-size: 18px;
 	}
 
 	#contact .info-wrap .dbox p {
-    font-size: 25px;
-	}
+    font-size: 18px;
+ }
 
 	#footer p,a{
 		font-size:20px;
@@ -1294,3 +1295,4 @@ li {
 /* Other Styles Remain Unchanged */
 
 /* Continue with other specific styles and components */
+
