@@ -1,4 +1,6 @@
 #resume {
+  margin: 30px;
+  background: white;
   padding:30px;
   min-width: 310px;
   font: 16px Helvetica, Avernir, sans-serif;
@@ -6,6 +8,7 @@
   color: #ffffff
 }
 #resume h1 {
+  color: rgb(97 97 97);
   margin: 0 0 16px 0;
   padding: 0 0 16px 0;
   font-size: 42px;
@@ -30,6 +33,7 @@
   font-weight: normal
 }
 #resume p {
+  color:rgb(0,0,0);
   margin: 0 0 16px 0
 }
 #resume a {
@@ -47,6 +51,7 @@
   color: #666
 }
 #resume dt {
+  color:black;
   font-style: italic;
   font-weight: bold;
   font-size: 18px;
@@ -65,6 +70,9 @@
 #resume dl dd {
   /* width: 500px; */
   padding-left: 26px
+}
+#resume li {
+  color:black;
 }
 #resume img {
   float: right;
