@@ -307,7 +307,8 @@ h5 {
 }
 
 p {
-	font-size: 15px;
+	color: white;
+	font-size: 25px;
 }
 
 a {
@@ -375,7 +376,7 @@ hr {
 	font-family: 'Nasa', fallback;
 	text-transform: uppercase;
 	color: #dfdfdf;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 400;
 	padding: 8px 2px;
 	border-radius: 0;
@@ -392,6 +393,10 @@ hr {
 	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
 	content: "";
 	transition: width 0.2s;
+}
+
+a.navbar-brand.page-scroll {
+    height: fit-content;
 }
 
 #menu.navbar-default .navbar-nav>li>a:hover:after {
@@ -505,6 +510,7 @@ a:focus,
 
 /* Header Section */
 #header {
+	min-height: 80vh;
 	background: transparent;
 	height: fit-content;
 }
@@ -589,9 +595,10 @@ a:focus,
 }
 
 li {
+	font-size: 25px;
 	word-wrap: break-word;
-    overflow-wrap: break-word;
-    word-break: break-word;
+	overflow-wrap: break-word;
+	word-break: break-word;
 	color: white;
 }
 
@@ -686,12 +693,12 @@ li {
 }
 
 #about .container {
-	margin: 0px 150px;
+	margin: 0px 50px;
 }
 
 #intro-paragraph {
 	width: 925px;
-	height: 220px;
+	height: fit-content;
 	margin: 200px 0px;
 }
 
@@ -715,7 +722,6 @@ li {
 }
 
 #about p {
-	line-height: 24px;
 	margin: 30px 0;
 }
 
@@ -760,7 +766,7 @@ li {
 }
 
 .services-text {
-    margin: 30px;
+	margin: 30px;
 }
 
 #services-second-ul {
@@ -792,7 +798,12 @@ li {
 	/* margin: 0px; */
 }
 
-#resume-section {/* margin: 50px; */position: relative;height: fit-content;background: transparent;}
+#resume-section {
+	/* margin: 50px; */
+	position: relative;
+	height: fit-content;
+	background: transparent;
+}
 
 /* contact Section */
 #contact-container {
@@ -869,6 +880,7 @@ li {
 		width: 300px;
 		height: 200px;
 	}
+
 	h1 {
 		font-size: 26px;
 	}
@@ -877,9 +889,10 @@ li {
 		font-size: 24px;
 	}
 
-	p,
-	a {
-		font-size: 10px;
+	li,
+	p {
+		width: 100%;
+		font-size: 25px;
 	}
 
 	#menu a.navbar-brand {
@@ -969,7 +982,7 @@ li {
 	}
 
 	.carousel {
-		margin:auto;
+		margin: auto;
 	}
 }
 
@@ -1001,6 +1014,7 @@ li {
 		width: 300px;
 		height: 200px;
 	}
+
 	h1 {
 		font-size: 24px;
 	}
@@ -1009,9 +1023,10 @@ li {
 		font-size: 22px;
 	}
 
-	p,
-	a {
-		font-size: 8px;
+	li,
+	p {
+		width: 100%;
+		font-size: 22px;
 	}
 
 	#menu a.navbar-brand {
@@ -1024,8 +1039,8 @@ li {
 	}
 
 	.navbar-header {
-	    background: cadetblue;
-	    border: 3px solid black;
+		background: cadetblue;
+		border: 3px solid black;
 	}
 
 	#service-row1 {
@@ -1038,8 +1053,8 @@ li {
 		/* margin-left: 0px; */
 
 		.row {
-		margin-right: 0px;
-		margin-left: 0px;
+			margin-right: 0px;
+			margin-left: 0px;
 		}
 	}
 
@@ -1107,26 +1122,27 @@ li {
 	}
 
 	.carousel {
-		margin:auto;
+		width: 80%;
+		margin: auto;
 	}
 }
 
 @media (max-width: 400px) {
 
 	html {
-		width:100vh;
+		width: 100vh;
 	}
-	
+
 	#header {
-		width:100vh;
+		width: 100vh;
 	}
-	
+
 	#menu a.navbar-brand {
 		font-size: 25px;
 	}
 
 	.navbar-header {
-		padding:15px;
+		padding: 15px;
 	}
 
 	#menu.navbar-default .navbar-nav>li>a {
@@ -1152,7 +1168,8 @@ li {
 		height: 250px;
 	}
 
-	li {
+	li,
+	p {
 		width: 100%;
 		font-size: 25px;
 	}
@@ -1192,14 +1209,15 @@ li {
 		/* margin-left: 0px; */
 
 		.row {
-		margin-right: 0px;
-		margin-left: 0px;
+			margin-right: 0px;
+			margin-left: 0px;
 		}
 	}
 
-	li {
-    font-size:18px;
-}
+	li,
+	p {
+		font-size: 25px;
+	}
 
 	#intro-paragraph {
 		width: 100%;
@@ -1208,7 +1226,7 @@ li {
 	}
 
 	#about {
-		width:100vh;
+		width: 100vh;
 		padding: 100px 0px;
 	}
 
@@ -1260,7 +1278,7 @@ li {
 
 	#resume p {
 		font-size: 30px;
-		line-height:1.2;
+		line-height: 1.2;
 	}
 
 	#resume dl {
@@ -1275,35 +1293,36 @@ li {
 	}
 
 	.carousel {
-		margin:auto;
+		margin: auto;
 	}
 
 	#contact {
-	width:100vh;
+		width: 100vh;
 	}
 
-	#contact .info-wrap h3{
-	font-size:35px;
+	#contact .info-wrap h3 {
+		font-size: 35px;
 	}
 
-	#contact .mb-4{
-	font-size:25px;
+	#contact .mb-4 {
+		font-size: 25px;
 	}
 
-	#contact .info-wrap p a{
-	font-size:25px;
+	#contact .info-wrap p a {
+		font-size: 25px;
 	}
 
 	#contact .info-wrap .dbox p span {
-		font-size:25px;
+		font-size: 25px;
 	}
 
 	#contact .info-wrap .dbox p {
-    font-size: 25px;
+		font-size: 25px;
 	}
 
-	#footer p,a{
-		font-size:20px;
+	#footer p,
+	a {
+		font-size: 20px;
 	}
 }
 
