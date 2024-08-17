@@ -725,9 +725,6 @@ li {
 	margin: 30px 0;
 }
 
-#thedoctor li {
-	width: max-content;
-}
 
 
 /* service Section */
@@ -798,12 +795,6 @@ li {
 	/* margin: 0px; */
 }
 
-#resume-section {
-	/* margin: 50px; */
-	position: relative;
-	height: fit-content;
-	background: transparent;
-}
 
 /* contact Section */
 #contact-container {
@@ -964,12 +955,6 @@ li {
 		height: 100%;
 	}
 
-	#resume-section {
-		/* margin: 50px; */
-		position: relative;
-		height: fit-content;
-		background: rgb(0, 0, 0, 0.3);
-	}
 
 	#resume p {
 		font-size: large;
@@ -1102,13 +1087,6 @@ li {
 
 	#service-row1 {
 		height: 100%;
-	}
-
-	#resume-section {
-		/* margin: 50px; */
-		position: relative;
-		height: fit-content;
-		background: rgb(0, 0, 0, 0.3);
 	}
 
 	#resume p {
@@ -1267,14 +1245,6 @@ li {
 		height: 100%;
 	}
 
-	#resume-section {
-		padding: 20px;
-		width: 100vh;
-		margin: 50px 0px;
-		position: relative;
-		height: fit-content;
-		background: rgb(0, 0, 0, 0.3);
-	}
 
 	#resume p {
 		font-size: 30px;

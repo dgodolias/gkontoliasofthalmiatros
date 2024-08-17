@@ -49,66 +49,74 @@
   <style>
     .d-1 {
       width: fit-content;
-  --b:4px;   /* border length*/
-  --c:20px;  /* the cube perspective */
-  
-  --g:calc(var(--c)*0.707); /* 0.707 = cos(45deg) = sin(45deg) */
-  
-  
-  padding:8px;
-  transition: 0.5s;
-  border: solid transparent;
-  border-width:var(--b) var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b));
-  background:
-    linear-gradient(-45deg,transparent var(--g),rgba(255,255,255,0.6) 0) left  /var(--c) 100%,
-    linear-gradient(135deg,transparent var(--g),rgba(255,255,255,0.3) 0) bottom /100% var(--c),
-    conic-gradient(from -90deg at top var(--b)   right var(--b),currentColor 270deg,transparent 0),
-    conic-gradient(from  90deg at bottom calc(var(--c) + var(--b)) left calc(var(--c) + var(--b)),currentColor 270deg,transparent 0) ;
-  background-repeat:no-repeat;
-  background-origin:border-box;
-  transform:translate(calc(var(--c)/-1),calc(var(--c)/1));
-  clip-path: 
-    polygon(var(--c) 0%, var(--c) 0%, 
-    100% 0%, 
-    100% calc(100% - var(--c)),100% calc(100% - var(--c)),
-    var(--c) calc(100% - var(--c)),
-    var(--c) calc(100% - var(--c)));
-}
-.d-1:hover {
-  transform:translate(0,0);
-  clip-path: 
-    polygon(0% var(--c), var(--c) 0%, 
-    100% 0%, 
-    100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 
-    0% 100%,0% 100%);
-}
-.d-2 {
-  --b:4px;   /* border length*/
-  --c:20px;  /* the cube perspective */
-  
-  --g:calc(var(--c)*0.707); /* 0.707 = cos(45deg) = sin(45deg) */
-  
-  
-  padding:8px;
-  color:blue;
-  transition: 0.5s;
-  border: solid transparent;
-  border-width:var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b)) var(--b);
-  background:
-    linear-gradient(  45deg,transparent var(--g),rgba(255,255,255,0.6) 0) right  /var(--c) 100%,
-    linear-gradient(-135deg,transparent var(--g),rgba(255, 255, 255, 0.3) 0) bottom /100% var(--c),
-    conic-gradient(from -180deg at top var(--b) left var(--b),currentColor 270deg,transparent 0),
-    conic-gradient(from    0deg at bottom calc(var(--c) + var(--b)) right calc(var(--c) + var(--b)),currentColor 270deg,transparent 0) ;
-  background-repeat:no-repeat;
-  background-origin:border-box;
-  transform:translate(calc(var(--c)/1),calc(var(--c)/1));
-  clip-path: 
-    polygon(calc(100% - var(--c)) 0%, calc(100% - var(--c)) 0%, 
-    0% 0%, 
-    0% calc(100% - var(--c)),0% calc(100% - var(--c)),
-    calc(100% - var(--c)) calc(100% - var(--c)),
-    calc(100% - var(--c)) calc(100% - var(--c)));
-}
+      --b: 4px;
+      /* border length*/
+      --c: 20px;
+      /* the cube perspective */
+
+      --g: calc(var(--c)*0.707);
+      /* 0.707 = cos(45deg) = sin(45deg) */
+
+
+      padding: 8px;
+      transition: 0.5s;
+      border: solid transparent;
+      border-width: var(--b) var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b));
+      background:
+        linear-gradient(-45deg, transparent var(--g), rgba(255, 255, 255, 0.6) 0) left /var(--c) 100%,
+        linear-gradient(135deg, transparent var(--g), rgba(255, 255, 255, 0.3) 0) bottom /100% var(--c),
+        conic-gradient(from -90deg at top var(--b) right var(--b), currentColor 270deg, transparent 0),
+        conic-gradient(from 90deg at bottom calc(var(--c) + var(--b)) left calc(var(--c) + var(--b)), currentColor 270deg, transparent 0);
+      background-repeat: no-repeat;
+      background-origin: border-box;
+      transform: translate(calc(var(--c)/-1), calc(var(--c)/1));
+      clip-path:
+        polygon(var(--c) 0%, var(--c) 0%,
+          100% 0%,
+          100% calc(100% - var(--c)), 100% calc(100% - var(--c)),
+          var(--c) calc(100% - var(--c)),
+          var(--c) calc(100% - var(--c)));
+    }
+
+    .d-1:hover {
+      transform: translate(0, 0);
+      clip-path:
+        polygon(0% var(--c), var(--c) 0%,
+          100% 0%,
+          100% calc(100% - var(--c)), calc(100% - var(--c)) 100%,
+          0% 100%, 0% 100%);
+    }
+
+    .d-2 {
+      --b: 4px;
+      /* border length*/
+      --c: 20px;
+      /* the cube perspective */
+
+      --g: calc(var(--c)*0.707);
+      /* 0.707 = cos(45deg) = sin(45deg) */
+
+
+      padding: 8px;
+      color: blue;
+      transition: 0.5s;
+      border: solid transparent;
+      border-width: var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b)) var(--b);
+      background:
+        linear-gradient(45deg, transparent var(--g), rgba(255, 255, 255, 0.6) 0) right /var(--c) 100%,
+        linear-gradient(-135deg, transparent var(--g), rgba(255, 255, 255, 0.3) 0) bottom /100% var(--c),
+        conic-gradient(from -180deg at top var(--b) left var(--b), currentColor 270deg, transparent 0),
+        conic-gradient(from 0deg at bottom calc(var(--c) + var(--b)) right calc(var(--c) + var(--b)), currentColor 270deg, transparent 0);
+      background-repeat: no-repeat;
+      background-origin: border-box;
+      transform: translate(calc(var(--c)/1), calc(var(--c)/1));
+      clip-path:
+        polygon(calc(100% - var(--c)) 0%, calc(100% - var(--c)) 0%,
+          0% 0%,
+          0% calc(100% - var(--c)), 0% calc(100% - var(--c)),
+          calc(100% - var(--c)) calc(100% - var(--c)),
+          calc(100% - var(--c)) calc(100% - var(--c)));
+    }
   </style>
 
 </head>
@@ -156,12 +164,13 @@
                 <div class="intro-text">
                   <h2 class="coloured-faded-text">Ιατρικές Υπηρεσίες</h2>
                   <ul>
-                    <li>Πλήρης οφθαλμολογική εξέταση (οπτική οξύτητα, επισκόπηση προσθίων μορίων οφθαλμού, τονομέτρηση, βυθοσκόπηση)</li>
+                    <li>Πλήρης οφθαλμολογική εξέταση (οπτική οξύτητα, επισκόπηση προσθίων μορίων οφθαλμού, τονομέτρηση,
+                      βυθοσκόπηση)</li>
                     <li>Εξέταση χρωματικής αντίληψης, οφθαλμοκινητικότητας και κορικών αντανακλαστικών</li>
                     <li>Γλαύκωμα: προληπτικός έλεγχος - διάγνωση - θεραπεία (με οπτικά πεδία και παχυμετρία)</li>
                     <li>Χειρουργική καταρράκτη (προεγχειρητικός έλεγχος, βιομετρία, μετεγχειρητική παρακολούθηση)</li>
                     <li>Κλινικός έλεγχος παιδιών και ενηλίκων.</li>
-                </ul>
+                  </ul>
                 </div>
               </div>
               <a class="d-1" href="tel://2821050396"> ΚΛΕΙΣΕ ΡΑΝΤΕΒΟΥ ΤΩΡΑ!</a>
@@ -184,29 +193,29 @@
       </div>
     </div>
   </header>
-  
+
   <!-- episkepsi Section -->
   <div id="episkepsi">
     <div class="container" id="episkepsi-container">
       <div class="row" id="service-row1">
         <!-- ---------- -->
-          <div class="episkepsi-text">
-            <h2 class="coloured-faded-text">ΛΟΓΟΣ ΕΠΙΣΚΕΨΗΣ</h2>
+        <div class="episkepsi-text">
+          <h2 class="coloured-faded-text">ΛΟΓΟΣ ΕΠΙΣΚΕΨΗΣ</h2>
 
-            <ul>
-              <li>Αστιγματισμός</li>
-              <li>Έλεγχος γλαυκώματος</li>
-              <li>Έλεγχος διαβητικής αμφιβληστροειδοπάθειας</li>
-              <li>Επιπεφυκίτιδα</li>
-              <li>Θολή όραση</li>
-              <li>Καταρράκτης</li>
-              <li>Μυωπία</li>
-              <li>Οφθαλμολογικές φλεγμονές</li>
-              <li>Πρεσβυωπία</li>
-              <li>Στραβισμός</li>
-              <li>Υπερμετρωπία</li>
-            </ul>
-          </div>
+          <ul>
+            <li>Αστιγματισμός</li>
+            <li>Έλεγχος γλαυκώματος</li>
+            <li>Έλεγχος διαβητικής αμφιβληστροειδοπάθειας</li>
+            <li>Επιπεφυκίτιδα</li>
+            <li>Θολή όραση</li>
+            <li>Καταρράκτης</li>
+            <li>Μυωπία</li>
+            <li>Οφθαλμολογικές φλεγμονές</li>
+            <li>Πρεσβυωπία</li>
+            <li>Στραβισμός</li>
+            <li>Υπερμετρωπία</li>
+          </ul>
+        </div>
         <!-- ---------- -->
         <div id="episkepsi-second-ul">
           <div class="episkepsi-text">
@@ -232,99 +241,104 @@
   </div>
   <!-- thedoctor Section -->
   <div id="thedoctor">
-    <div class="flex-container" id="thedoctor-container">
+    <div class="container">
+      <div class="flex-container" id="thedoctor-container">
 
-      <div class="container" id="memiamatia">
-        <div class="thedoctor-text">
-          <h1>Ο Ιατρός</h1>
-          <div class="list-style">
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-              <p>Ο χειρουργός οφθαλμίατρος ΓΚΟΝΤΟΛΙΑΣ ΣΤΕΡΓΙΟΣ διατηρεί ένα σύγχρονο και οργανωμένο ιατρείο στο κέντρο των Χανίων, τα τελευταία τρία έτη.
+        <div class="container" id="memiamatia">
+          <div class="thedoctor-text">
+            <h1>Ο Ιατρός</h1>
+            <div class="list-style">
+              <div class="col-lg-6 col-sm-6 col-xs-12">
+                <p>Ο χειρουργός οφθαλμίατρος ΓΚΟΝΤΟΛΙΑΣ ΣΤΕΡΓΙΟΣ διατηρεί ένα σύγχρονο και οργανωμένο ιατρείο στο κέντρο
+                  των Χανίων, τα τελευταία τρία έτη.
 
-                Έχει αποφοιτήσει από το 2ο Λύκειο της Ξάνθης, έλαβε το πτυχίο Ιατρικής από το Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης (όπου εισήχθη μετά από επιτυχείς Πανελλήνιες εξετάσεις) και ολοκλήρωσε την ειδικότητα της οφθαλμολογίας στο Πανεπιστημιακό Νοσοκομείο Ηρακλείου Κρήτης.
-                
-                Εργάστηκε ως Επιμελητής Οφθαλμολογίας ΕΣΥ στα Γενικά Νοσοκομεία Ρεθύμνου (2 έτη) και Χανίων (6 έτη), όπου αποκόμισε σημαντική κλινική και χειρουργική εμπειρία στη διάγνωση και αντιμετώπιση οφθαλμικών παθήσεων, ιδίως όσον αφορά την χειρουργική αφαίρεση του καταρράκτη (φακοθρυψία με υπερήχους).</p>
+                  Έχει αποφοιτήσει από το 2ο Λύκειο της Ξάνθης, έλαβε το πτυχίο Ιατρικής από το Αριστοτέλειο
+                  Πανεπιστήμιο Θεσσαλονίκης (όπου εισήχθη μετά από επιτυχείς Πανελλήνιες εξετάσεις) και ολοκλήρωσε την
+                  ειδικότητα της οφθαλμολογίας στο Πανεπιστημιακό Νοσοκομείο Ηρακλείου Κρήτης.
+
+                  Εργάστηκε ως Επιμελητής Οφθαλμολογίας ΕΣΥ στα Γενικά Νοσοκομεία Ρεθύμνου (2 έτη) και Χανίων (6 έτη),
+                  όπου αποκόμισε σημαντική κλινική και χειρουργική εμπειρία στη διάγνωση και αντιμετώπιση οφθαλμικών
+                  παθήσεων, ιδίως όσον αφορά την χειρουργική αφαίρεση του καταρράκτη (φακοθρυψία με υπερήχους).</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Resume Section -->
-  <div id="resume-section">
-    <div class="container" id="resume-container">
-      <div id="resume">
-        <img src="img/transparent-profile.png" alt="Στέργιος Γκοντόλιας">
-        <dl>
-          <dt>Επικοινωνία</dt>
-          <dd>
-            <ul>
-              <li>Ιδιωτικό Ιατρείο: Κ. Μητσοτάκη 38, Δικαστήρια, 73132 Χανιά, Κρήτη</li>
-              <li>Τηλέφωνο: 28210-50396, 6974701928</li>
-              <li>Email: stgodolias@gmail.com</li>
-            </ul>
-          </dd>
-        </dl>
-        <dl>
-          <dt>Εκπαίδευση</dt>
-          <dd>
-            <ul>
-              <li>Πτυχίο Ιατρικής: Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης (ΑΠΘ), 1997</li>
-              <li>Ειδικότητα Οφθαλμολογίας: Πανεπιστημιακό Νοσοκομείο Ηρακλείου Κρήτης, 2009</li>
-            </ul>
-          </dd>
-        </dl>
-        <dl>
-          <dt>Επαγγελματική Εμπειρία</dt>
-          <dd>
-            <ul>
-              <li>Ιδιώτης Οφθαλμίατρος: Χανιά, Κρήτη (2019-σήμερα)</li>
-              <li>Επικουρικός Επιμελητής Β’ Οφθαλμολογικής Κλινικής: Γενικό Νοσοκομείο Χανίων (2014-2018)</li>
-              <li>Επικουρικός Επιμελητής Β’ Οφθαλμολογικής Κλινικής: Γενικό Νοσοκομείο Ρεθύμνου (2009-2012)</li>
-            </ul>
-          </dd>
-        </dl>
-        <dl>
-          <dt>Εξειδίκευση</dt>
-          <dd>
-            <ul>
-              <li>Χειρουργική Καταρράκτη: Πραγματοποίηση άνω των 687 επεμβάσεων αφαίρεσης καταρράκτη.</li>
-              <li>Διαβητική Αμφιβληστροειδοπάθεια: Διάγνωση και θεραπεία με ενδοβολβικές ενέσεις Lucentis.</li>
-              <li>Γλαύκωμα: Διάγνωση και παρακολούθηση με χρήση οπτικών πεδίων και παχυμετρίας.</li>
-              <li>Παθήσεις Βυθού: Διάγνωση και θεραπεία με φλουοροαγγειογραφία και argon laser φωτοπηξία.</li>
-            </ul>
-          </dd>
-        </dl>
-        <dl>
-          <dt>Ερευνητική Δραστηριότητα</dt>
-          <dd>
-            <ul>
-              <li>Συμμετοχή σε 10 ανακοινώσεις: 7 σε μη διεθνή συνέδρια και 3 σε διεθνή συνέδρια.</li>
-              <li>Δημοσιεύσεις: 2 δημοσιεύσεις σε έγκριτα ελληνικά περιοδικά.</li>
-            </ul>
-          </dd>
-        </dl>
-        <dl>
-          <dt>Επιμόρφωση</dt>
-          <dd>
-            <ul>
-              <li>Συμμετοχή σε 409 CME-CPD credits: Διεθνή και πανελλήνια συνέδρια, κλινικά φροντιστήρια.</li>
-              <li>Εκπαίδευση Ειδικευομένων: Συμμετοχή στην εκπαίδευση ειδικευομένων σε Οφθαλμολογικές κλινικές.</li>
-            </ul>
-          </dd>
-        </dl>
-        <dl>
-          <dt>Γλώσσες</dt>
-          <dd>
-            <ul>
-              <li>Αγγλικά: Certificate of Proficiency in English (ECPE), Certificate in Advanced English (Level C1),
-                First Certificate in English.</li>
-            </ul>
-          </dd>
-        </dl>
+      <div class="container" id="resume-container">
+        <div id="resume">
+          <dl>
+            <dt>Επικοινωνία</dt>
+            <dd>
+              <ul>
+                <li>Ιδιωτικό Ιατρείο: Κ. Μητσοτάκη 38, Δικαστήρια, 73132 Χανιά, Κρήτη</li>
+                <li>Τηλέφωνο: 28210-50396, 6974701928</li>
+                <li>Email: stgodolias@gmail.com</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Εκπαίδευση</dt>
+            <dd>
+              <ul>
+                <li>Πτυχίο Ιατρικής: Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης (ΑΠΘ), 1997</li>
+                <li>Ειδικότητα Οφθαλμολογίας: Πανεπιστημιακό Νοσοκομείο Ηρακλείου Κρήτης, 2009</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Επαγγελματική Εμπειρία</dt>
+            <dd>
+              <ul>
+                <li>Ιδιώτης Οφθαλμίατρος: Χανιά, Κρήτη (2019-σήμερα)</li>
+                <li>Επικουρικός Επιμελητής Β’ Οφθαλμολογικής Κλινικής: Γενικό Νοσοκομείο Χανίων (2014-2018)</li>
+                <li>Επικουρικός Επιμελητής Β’ Οφθαλμολογικής Κλινικής: Γενικό Νοσοκομείο Ρεθύμνου (2009-2012)</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Εξειδίκευση</dt>
+            <dd>
+              <ul>
+                <li>Χειρουργική Καταρράκτη: Πραγματοποίηση άνω των 687 επεμβάσεων αφαίρεσης καταρράκτη.</li>
+                <li>Διαβητική Αμφιβληστροειδοπάθεια: Διάγνωση και θεραπεία με ενδοβολβικές ενέσεις Lucentis.</li>
+                <li>Γλαύκωμα: Διάγνωση και παρακολούθηση με χρήση οπτικών πεδίων και παχυμετρίας.</li>
+                <li>Παθήσεις Βυθού: Διάγνωση και θεραπεία με φλουοροαγγειογραφία και argon laser φωτοπηξία.</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Ερευνητική Δραστηριότητα</dt>
+            <dd>
+              <ul>
+                <li>Συμμετοχή σε 10 ανακοινώσεις: 7 σε μη διεθνή συνέδρια και 3 σε διεθνή συνέδρια.</li>
+                <li>Δημοσιεύσεις: 2 δημοσιεύσεις σε έγκριτα ελληνικά περιοδικά.</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Επιμόρφωση</dt>
+            <dd>
+              <ul>
+                <li>Συμμετοχή σε 409 CME-CPD credits: Διεθνή και πανελλήνια συνέδρια, κλινικά φροντιστήρια.</li>
+                <li>Εκπαίδευση Ειδικευομένων: Συμμετοχή στην εκπαίδευση ειδικευομένων σε Οφθαλμολογικές κλινικές.</li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>Γλώσσες</dt>
+            <dd>
+              <ul>
+                <li>Αγγλικά: Certificate of Proficiency in English (ECPE), Certificate in Advanced English (Level C1),
+                  First Certificate in English.</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
       </div>
     </div>
   </div>
+  <!-- Biography Section -->
+
   <!-- contact Section -->
   <div id="contact">
     <div class="flex-container">
@@ -399,7 +413,7 @@
   <script type="text/javascript" src="js/carousel.js"></script>
   <script type="text/javascript" src="js/intro-canvas.js"></script>
   <script type="text/javascript" src="js/contact_info_shape.js"></script>>
-    
+
 </body>
 
 </html>
