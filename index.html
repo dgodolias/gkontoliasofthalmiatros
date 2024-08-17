@@ -48,79 +48,8 @@
   <link rel="stylesheet" type="text/css" href="css/intro-canvas.css">
   <link rel="stylesheet" type="text/css" href="css/resume.css">
   <link rel="stylesheet" type="text/css" href="css/contact-template.css">
+  <link rel="stylesheet" type="text/css" href="css/buttonappointment.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <style>
-    .d-1 {
-      width: fit-content;
-      --b: 4px;
-      /* border length*/
-      --c: 20px;
-      /* the cube perspective */
-
-      --g: calc(var(--c)*0.707);
-      /* 0.707 = cos(45deg) = sin(45deg) */
-
-
-      padding: 8px;
-      transition: 0.5s;
-      border: solid transparent;
-      border-width: var(--b) var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b));
-      background:
-        linear-gradient(-45deg, transparent var(--g), rgba(255, 255, 255, 0.6) 0) left /var(--c) 100%,
-        linear-gradient(135deg, transparent var(--g), rgba(255, 255, 255, 0.3) 0) bottom /100% var(--c),
-        conic-gradient(from -90deg at top var(--b) right var(--b), currentColor 270deg, transparent 0),
-        conic-gradient(from 90deg at bottom calc(var(--c) + var(--b)) left calc(var(--c) + var(--b)), currentColor 270deg, transparent 0);
-      background-repeat: no-repeat;
-      background-origin: border-box;
-      transform: translate(calc(var(--c)/-1), calc(var(--c)/1));
-      clip-path:
-        polygon(var(--c) 0%, var(--c) 0%,
-          100% 0%,
-          100% calc(100% - var(--c)), 100% calc(100% - var(--c)),
-          var(--c) calc(100% - var(--c)),
-          var(--c) calc(100% - var(--c)));
-    }
-
-    .d-1:hover {
-      transform: translate(0, 0);
-      clip-path:
-        polygon(0% var(--c), var(--c) 0%,
-          100% 0%,
-          100% calc(100% - var(--c)), calc(100% - var(--c)) 100%,
-          0% 100%, 0% 100%);
-    }
-
-    .d-2 {
-      --b: 4px;
-      /* border length*/
-      --c: 20px;
-      /* the cube perspective */
-
-      --g: calc(var(--c)*0.707);
-      /* 0.707 = cos(45deg) = sin(45deg) */
-
-
-      padding: 8px;
-      color: blue;
-      transition: 0.5s;
-      border: solid transparent;
-      border-width: var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b)) var(--b);
-      background:
-        linear-gradient(45deg, transparent var(--g), rgba(255, 255, 255, 0.6) 0) right /var(--c) 100%,
-        linear-gradient(-135deg, transparent var(--g), rgba(255, 255, 255, 0.3) 0) bottom /100% var(--c),
-        conic-gradient(from -180deg at top var(--b) left var(--b), currentColor 270deg, transparent 0),
-        conic-gradient(from 0deg at bottom calc(var(--c) + var(--b)) right calc(var(--c) + var(--b)), currentColor 270deg, transparent 0);
-      background-repeat: no-repeat;
-      background-origin: border-box;
-      transform: translate(calc(var(--c)/1), calc(var(--c)/1));
-      clip-path:
-        polygon(calc(100% - var(--c)) 0%, calc(100% - var(--c)) 0%,
-          0% 0%,
-          0% calc(100% - var(--c)), 0% calc(100% - var(--c)),
-          calc(100% - var(--c)) calc(100% - var(--c)),
-          calc(100% - var(--c)) calc(100% - var(--c)));
-    }
-  </style>
 
 </head>
 
@@ -148,8 +77,8 @@
           <li><a href="#header" class="page-scroll">ΤΟ ΙΑΤΡΕΙΟ</a></li>
           <li><a href="#episkepsi" class="page-scroll">ΕΠΙΣΚΕΨΗ</a></li>
           <li><a href="#thedoctor" class="page-scroll">Ο ΙΑΤΡΟΣ</a></li>
-          <li><a href="#resume-section" class="page-scroll">ΒΙΟΓΡΑΦΙΚΟ</a></li>
-          <li><a href="#" class="page-scroll">ΔΗΜΟΣΙΕΥΣΕΙΣ</a></li>
+          <li><a href="#biography" class="page-scroll">ΒΙΟΓΡΑΦΙΚΟ</a></li>
+          <li><a href="#publish" class="page-scroll">ΔΗΜΟΣΙΕΥΣΕΙΣ</a></li>
           <li><a href="#contact" class="page-scroll">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
         </ul>
       </div>
@@ -342,8 +271,20 @@
   </div>
   <!-- Biography Section -->
   <div id="biography">
-    <div class="container" id="pdf-iframe-container">
+    <div class="container pdf-iframe-container">
       <iframe src="file.pdf" width="80%" height="100%"></iframe>
+    </div>
+  </div>
+  <!-- Publish Section -->
+  <div id="publish">
+    <div class = "container" id="publish-container">
+    <div class="flex-container" id="publish-buttons-container">
+      <a class="d-1" href="">ΙΑΤΡΙΚΕΣ ΕΠΙΣΤΗΜΟΝΙΚΕΣ ΔΙΑΚΡΙΣΕΙΣ</a>
+      <a class="d-1" href="">ΙΑΤΡΙΚΕΣ ΕΠΙΣΤΗΜΟΝΙΚΕΣ ΔΙΑΚΡΙΣΕΙΣ</a>
+    </div>
+      <div class="container pdf-iframe-container">
+        <iframe src="file.pdf" width="80%" height="100%"></iframe>
+      </div>
     </div>
   </div>
 

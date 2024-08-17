@@ -653,6 +653,7 @@ li {
 }
 
 #thedoctor {
+	background: rgb(0, 0, 0, 0.2);
 	padding: 200px 0;
 }
 
@@ -732,7 +733,6 @@ li {
 #episkepsi {
 	/* position: relative; */
 	height: 800px;
-	background: rgb(0, 0, 0, 0.2);
 }
 
 #service-row1 {
@@ -804,12 +804,32 @@ li {
 	height: 90vh;
 }
 
-#pdf-iframe-container{
+.pdf-iframe-container{
+	flex-grow: 1;
 	/* margin: 50px; */
 	display: flex;
 	/* align-items: center; */
 	justify-content: center;
 	height:100%;
+}
+
+/* Publish Section */
+
+#publish{
+	background: rgb(0, 0, 0, 0.2);
+	padding: 50px;
+	height: 90vh;
+}
+
+#publish-container{
+	display: flex;
+	height: -webkit-fill-available;
+}
+
+#publish-buttons-container {
+	justify-content: flex-start;
+	margin: 20px;
+	height: fit-content;
 }
 
 /* contact Section */
