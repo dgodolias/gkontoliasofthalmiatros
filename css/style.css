@@ -602,14 +602,14 @@ li {
 	color: white;
 }
 
-/* About Section */
+/* thedoctor Section */
 
 .content-wrapper {
 	margin-bottom: 20px;
 	/* margin-right: 80px; */
 	display: flex;
 	justify-content: space-between;
-	/* Optional: Adds space between the carousel and about text */
+	/* Optional: Adds space between the carousel and thedoctor text */
 }
 
 .carousel {
@@ -652,23 +652,23 @@ li {
 	-webkit-text-fill-color: transparent;
 }
 
-#about {
+#thedoctor {
 	padding: 200px 0;
 }
 
-#about h3 {
+#thedoctor h3 {
 	font-size: 22px;
 	margin: 0 0 20px 0;
 }
 
-#about h2 {
+#thedoctor h2 {
 	width: max-content;
 	position: relative;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 }
 
-#about h2::after {
+#thedoctor h2::after {
 	position: absolute;
 	content: "";
 	background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
@@ -678,7 +678,7 @@ li {
 	left: 0;
 }
 
-#about .about-text li {
+#thedoctor .thedoctor-text li {
 	margin-bottom: 6px;
 	margin-left: 6px;
 	list-style: none;
@@ -686,13 +686,13 @@ li {
 	color: rgb(255, 255, 255);
 }
 
-#about .about-text li {
+#thedoctor .thedoctor-text li {
 	list-style-type: disc;
 	/* This will create a bullet */
 
 }
 
-#about .container {
+#thedoctor .container {
 	margin: 0px 50px;
 }
 
@@ -709,7 +709,7 @@ li {
 	justify-content: center;
 }
 
-#about .about-text li:before {
+#thedoctor .thedoctor-text li:before {
 	/* Remove or comment out this block if not needed */
 }
 
@@ -721,18 +721,18 @@ li {
 	border-radius: 15px;
 }
 
-#about p {
+#thedoctor p {
 	margin: 30px 0;
 }
 
-#about li {
+#thedoctor li {
 	width: max-content;
 }
 
 
 /* service Section */
 
-#services {
+#episkepsi {
 	/* position: relative; */
 	height: 800px;
 	background: rgb(0, 0, 0, 0.2);
@@ -746,11 +746,11 @@ li {
 }
 
 
-#services .col-xs-12.col-md-6 {
+#episkepsi .col-xs-12.col-md-6 {
 	width: fit-content;
 }
 
-#services-container {
+#episkepsi-container {
 	padding: 0px;
 	margin: 0px;
 	display: flex;
@@ -760,24 +760,24 @@ li {
 	/* margin: 0px; */
 }
 
-#services-container>*:first-child {
+#episkepsi-container>*:first-child {
 	/* margin-left: 20px; */
 	/* Adds space to the right of the first child, effectively moving the content slightly to the right */
 }
 
-.services-text {
+.episkepsi-text {
 	margin: 30px;
 }
 
-#services-second-ul {
+#episkepsi-second-ul {
 	margin-top: -60px;
 }
 
-#services li {
+#episkepsi li {
 	width: fit-content;
 }
 
-#services-pic {
+#episkepsi-pic {
 	margin-left: 80px;
 	width: 286.5px;
 	height: 360px;
@@ -876,7 +876,7 @@ li {
 	}
 
 	#profile-pic,
-	#services-pic {
+	#episkepsi-pic {
 		width: 300px;
 		height: 200px;
 	}
@@ -909,7 +909,7 @@ li {
 		display: grid;
 	}
 
-	#services-container>*:first-child {
+	#episkepsi-container>*:first-child {
 		/* margin-left: 0px; */
 
 		.row {
@@ -924,11 +924,11 @@ li {
 		height: fit-content
 	}
 
-	#about {
+	#thedoctor {
 		padding: 100px 0px;
 	}
 
-	#about .container {
+	#thedoctor .container {
 		margin: 0px;
 
 	}
@@ -948,15 +948,15 @@ li {
 		/* height: 100%; */
 	}
 
-	#about-container {
+	#thedoctor-container {
 		display: block;
 	}
 
-	#services .col-xs-12.col-md-6 {
+	#episkepsi .col-xs-12.col-md-6 {
 		width: 100%;
 	}
 
-	#services {
+	#episkepsi {
 		height: 1100px;
 	}
 
@@ -1010,7 +1010,7 @@ li {
 	}
 
 	#profile-pic,
-	#services-pic {
+	#episkepsi-pic {
 		width: 300px;
 		height: 200px;
 	}
@@ -1048,7 +1048,7 @@ li {
 		display: grid;
 	}
 
-	#services-container>*:first-child {
+	#episkepsi-container>*:first-child {
 		display: grid;
 		/* margin-left: 0px; */
 
@@ -1064,11 +1064,11 @@ li {
 		height: fit-content
 	}
 
-	#about {
+	#thedoctor {
 		padding: 100px 0px;
 	}
 
-	#about .container {
+	#thedoctor .container {
 		margin: 0px;
 
 	}
@@ -1087,15 +1087,15 @@ li {
 		/* height: 100%; */
 	}
 
-	#about-container {
+	#thedoctor-container {
 		display: block;
 	}
 
-	#services .col-xs-12.col-md-6 {
+	#episkepsi .col-xs-12.col-md-6 {
 		width: 100%;
 	}
 
-	#services {
+	#episkepsi {
 		/* width: 100vh; */
 		/* height: 1000px; */
 	}
@@ -1163,7 +1163,7 @@ li {
 	}
 
 	#profile-pic,
-	#services-pic {
+	#episkepsi-pic {
 		width: 375px;
 		height: 250px;
 	}
@@ -1205,7 +1205,7 @@ li {
 		display: grid;
 	}
 
-	#services-container>*:first-child {
+	#episkepsi-container>*:first-child {
 		/* margin-left: 0px; */
 
 		.row {
@@ -1225,12 +1225,12 @@ li {
 		height: fit-content
 	}
 
-	#about {
+	#thedoctor {
 		width: 100vh;
 		padding: 100px 0px;
 	}
 
-	#about .container {
+	#thedoctor .container {
 		margin: 0px;
 
 	}
@@ -1249,16 +1249,16 @@ li {
 		/* height: 100%; */
 	}
 
-	#about-container {
+	#thedoctor-container {
 		display: block;
 	}
 
-	#services .col-xs-12.col-md-6 {
+	#episkepsi .col-xs-12.col-md-6 {
 		padding-right: 0px;
 		width: 100%;
 	}
 
-	#services {
+	#episkepsi {
 		width: 100vh;
 		height: 1500px;
 	}
