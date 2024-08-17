@@ -796,6 +796,22 @@ li {
 }
 
 
+
+/* biography Section */
+
+#biography {
+	margin: 50px;
+	height: 90vh;
+}
+
+#pdf-iframe-container{
+	/* margin: 50px; */
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+	height:100%;
+}
+
 /* contact Section */
 #contact-container {
 	align-items: center;
