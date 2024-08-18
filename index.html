@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en" style="height: auto;"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,7 +17,7 @@
   <link rel="icon" type="image/png" href="img/piletter.png">
   <link rel="shortcut icon" href="img/piletter.png" type="image/x-icon">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
@@ -55,9 +52,9 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <div id="bg">
-    <canvas></canvas>
-    <canvas></canvas>
-    <canvas></canvas>
+    <canvas width="1307" height="761"></canvas>
+    <canvas width="1307" height="761"></canvas>
+    <canvas width="1307" height="761"></canvas>
   </div>
   <!-- Navigation
     ==========================================-->
@@ -65,18 +62,16 @@
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-          data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
-            class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         <a class="navbar-brand page-scroll" href="#page-top">ΟΦΘΑΛΜΟΛΟΓΙΚΟ ΙΑΤΡΕΙΟ ΓΚΟΝΤΟΛΙΑ ΣΤΕΡΓΙΟΥ</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#header" class="page-scroll">ΤΟ ΙΑΤΡΕΙΟ</a></li>
-          <li><a href="#episkepsi" class="page-scroll">ΕΠΙΣΚΕΨΗ</a></li>
-          <li><a href="#thedoctor" class="page-scroll">Ο ΙΑΤΡΟΣ</a></li>
+          <li class=""><a href="#header" class="page-scroll">ΤΟ ΙΑΤΡΕΙΟ</a></li>
+          <li class="active"><a href="#episkepsi" class="page-scroll">ΕΠΙΣΚΕΨΗ</a></li>
+          <li class=""><a href="#thedoctor" class="page-scroll">Ο ΙΑΤΡΟΣ</a></li>
           <li><a href="#biography" class="page-scroll">ΒΙΟΓΡΑΦΙΚΟ</a></li>
           <li><a href="#publish" class="page-scroll">ΔΗΜΟΣΙΕΥΣΕΙΣ</a></li>
           <li><a href="#contact" class="page-scroll">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
@@ -111,11 +106,11 @@
           <div class="flex-container intro-profile-pic">
             <!-- Carousel -->
             <div class="carousel">
-              <img class="carousel-image" src="img/photo3.jpg">
-              <img class="carousel-image" src="img/photo4.jpg">
-              <img class="carousel-image" src="img/photo5.jpg">
-              <img class="carousel-image" src="img/photo6.jpg">
-              <img class="carousel-image" src="img/photo8.jpg">
+              <img class="carousel-image" src="img/photo3.jpg" style="opacity: 0; transition: opacity 4s ease-in-out, transform 4s ease-in-out; transform: translate(-100%, -50%) scale(0.5); position: absolute; top: 50%;">
+              <img class="carousel-image" src="img/photo4.jpg" style="opacity: 0; transition: opacity 4s ease-in-out, transform 4s ease-in-out; transform: translate(-100%, -50%) scale(0.5); position: absolute; top: 50%;">
+              <img class="carousel-image" src="img/photo5.jpg" style="opacity: 1; transition: opacity 4s ease-in-out, transform 4s ease-in-out; transform: translate(0px, -50%) scale(1); position: absolute; top: 50%;">
+              <img class="carousel-image" src="img/photo6.jpg" style="opacity: 0; transition: opacity 4s ease-in-out, transform 4s ease-in-out; transform: translate(-100%, -50%) scale(0.5); position: absolute; top: 50%;">
+              <img class="carousel-image" src="img/photo8.jpg" style="opacity: 0; transition: opacity 4s ease-in-out, transform 4s ease-in-out; transform: translate(-100%, -50%) scale(0.5); position: absolute; top: 50%;">
 
             </div>
             <!-- ---------- -->
@@ -180,7 +175,7 @@
           <div class="thedoctor-text">
             <h1>Ο Ιατρός</h1>
             <div class="list-style">
-              <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="">
                 <p>Ο χειρουργός οφθαλμίατρος ΓΚΟΝΤΟΛΙΑΣ ΣΤΕΡΓΙΟΣ διατηρεί ένα σύγχρονο και οργανωμένο ιατρείο στο κέντρο
                   των Χανίων, τα τελευταία τρία έτη.
 
@@ -194,6 +189,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="flex-container intro-profile-pic">
+          <div id="profile-pic"></div>
         </div>
       </div>
       <div class="container" id="resume-container">
@@ -276,7 +274,7 @@
   </div>
   <!-- Publish Section -->
   <div id="publish">
-    <div class = "container" id="publish-container">
+    <div class="container" id="publish-container">
     <div class="flex-container" id="publish-buttons-container">
       <a class="d-1" href="">ΙΑΤΡΙΚΕΣ ΕΠΙΣΤΗΜΟΝΙΚΕΣ ΔΙΑΚΡΙΣΕΙΣ</a>
       <a class="d-1" href="">ΙΑΤΡΙΚΕΣ ΕΠΙΣΤΗΜΟΝΙΚΕΣ ΔΙΑΚΡΙΣΕΙΣ</a>
@@ -291,15 +289,12 @@
   <div id="contact">
     <div class="flex-container">
       <div class="container" id="contact-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.7325960936105!2d24.024719288174225!3d35.5108897687861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149c7dc1e7a18aed%3A0xa75a3171d7c624e4!2zzprPic69LiBNaXRzb3Rha2kgMzgsIM6nzrHOvc65zqwgNzMxIDMy!5e0!3m2!1sel!2sgr!4v1720588488634!5m2!1sel!2sgr"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.7325960936105!2d24.024719288174225!3d35.5108897687861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149c7dc1e7a18aed%3A0xa75a3171d7c624e4!2zzprPic69LiBNaXRzb3Rha2kgMzgsIM6nzrHOvc65zqwgNzMxIDMy!5e0!3m2!1sel!2sgr!4v1720588488634!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="container" id="contact-info">
         <div class="info-wrap-container" style="position: relative;">
-          <div class="background-container bg2"></div>
-          <div class="background-container bg1"></div>
+          <div class="background-container bg2" style="width: 568px; position: absolute; border: 2px solid rgb(232, 235, 235); top: calc(-20px); left: calc(20px);"></div>
+          <div class="background-container bg1" style="width: 568px; position: absolute; border: 2px solid rgb(232, 235, 235); top: calc(-10px); left: calc(10px);"></div>
           <div class="info-wrap p-lg-5 p-4 img">
             <h3> Επικοινωνία</h3>
             <p class="mb-4">Ελάτε απο το ιατρείο, για την καλύτερη δυνατή εξυπηρέτηση στο πρόβλημα σας!</p>
@@ -360,8 +355,8 @@
   <script type="text/javascript" src="js/index2.js"></script>
   <script type="text/javascript" src="js/carousel.js"></script>
   <script type="text/javascript" src="js/intro-canvas.js"></script>
-  <script type="text/javascript" src="js/contact_info_shape.js"></script>>
+  <script type="text/javascript" src="js/contact_info_shape.js"></script>&gt;
 
-</body>
 
-</html>
+
+</body></html>
