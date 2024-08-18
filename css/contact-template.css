@@ -83,6 +83,7 @@ img {
 }
 
 .info-wrap .dbox p span {
+    font-size: 20px;
     font-weight: 400;
     color: #000;
 }
@@ -91,8 +92,7 @@ img {
     color: blue; /* Default link color */
     text-decoration: underline; /* Makes it look like a link */
     cursor: pointer; /* Changes cursor to pointer to indicate it's clickable */
-  
-    font-size: medium;
+    font-size: 20px;
 }
 .info-wrap .dbox p a:active {
     color: purple;
