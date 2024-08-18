@@ -530,7 +530,11 @@ a:focus,
 
 .intro {
 
-	-o-background-size: cover;
+min-height: inherit;
+
+/* height: 100%; */
+
+-o-background-size: cover;
 }
 
 #intro-container {
@@ -540,7 +544,8 @@ a:focus,
 }
 
 .intro .overlay {
-	height: fit-content;
+	min-height: inherit;
+	height: 100%;
 	justify-content: center;
 	align-items: center;
 	background: rgba(0, 0, 0, 0.2);
@@ -735,6 +740,7 @@ li {
 /* service Section */
 
 #episkepsi {
+	min-height: 80vh;
 	/* position: relative; */
 	height: 800px;
 }
@@ -752,6 +758,7 @@ li {
 }
 
 #episkepsi-container {
+	min-height: inherit;
 	padding: 0px;
 	margin: 0px;
 	display: flex;
@@ -931,6 +938,7 @@ li {
 	}
 
 	#menu.navbar-default .navbar-nav>li>a {
+		width: fit-content;
 		font-size: 12px;
 		margin: 5px 12px;
 	}
