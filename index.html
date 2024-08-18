@@ -173,7 +173,7 @@
 
         <div class="container" id="memiamatia">
           <div class="thedoctor-text">
-            <h1>Ο Ιατρός</h1>
+            <h1 class="coloured-faded-text">Ο Ιατρός</h1>
             <div class="list-style">
               <div class="">
                 <p>Ο χειρουργός οφθαλμίατρος ΓΚΟΝΤΟΛΙΑΣ ΣΤΕΡΓΙΟΣ διατηρεί ένα σύγχρονο και οργανωμένο ιατρείο στο κέντρο
@@ -269,21 +269,21 @@
   <!-- Biography Section -->
   <div id="biography">
     <div class="container pdf-iframe-container">
-      <iframe src="file.pdf" width="80%" height="100%"></iframe>
+      <iframe src="files/pdf/file.pdf" width="80%" height="100%"></iframe>
     </div>
   </div>
   <!-- Publish Section -->
   <div id="publish">
     <div class="container" id="publish-container">
-    <div class="flex-container" id="publish-buttons-container">
-      <a class="d-1" href="">ΙΑΤΡΙΚΕΣ ΕΠΙΣΤΗΜΟΝΙΚΕΣ ΔΙΑΚΡΙΣΕΙΣ</a>
-      <a class="d-1" href="">ΙΑΤΡΙΚΕΣ ΕΠΙΣΤΗΜΟΝΙΚΕΣ ΔΙΑΚΡΙΣΕΙΣ</a>
+        <div class="flex-container" id="publish-buttons-container">
+            <a class="d-1"  onclick="changeIframeContent('files/pdf/file1.pdf')">ΑΡΧΕΙΟ 1</a>
+            <a class="d-1"  onclick="changeIframeContent('files/pdf/file2.pdf')">ΑΡΧΕΙΟ 2</a>
+        </div>
+        <div class="container pdf-iframe-container">
+            <iframe id="pdf-iframe" src="files/pdf/file1.pdf" width="80%" height="100%"></iframe>
+        </div>
     </div>
-      <div class="container pdf-iframe-container">
-        <iframe src="file.pdf" width="80%" height="100%"></iframe>
-      </div>
-    </div>
-  </div>
+</div>
 
   <!-- contact Section -->
   <div id="contact">
@@ -355,7 +355,8 @@
   <script type="text/javascript" src="js/index2.js"></script>
   <script type="text/javascript" src="js/carousel.js"></script>
   <script type="text/javascript" src="js/intro-canvas.js"></script>
-  <script type="text/javascript" src="js/contact_info_shape.js"></script>&gt;
+  <script type="text/javascript" src="js/contact_info_shape.js"></script>
+  <script type="text/javascript" src="js/pdfchangebuttons.js"></script>
 
 
 

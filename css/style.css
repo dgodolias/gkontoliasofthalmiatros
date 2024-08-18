@@ -693,6 +693,7 @@ li {
 }
 
 #thedoctor .container {
+	height: fit-content;
 	margin: 0px 50px;
 }
 
