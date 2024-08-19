@@ -816,7 +816,7 @@ li {
 }
 
 .pdf-iframe-container{
-	flex-grow: 1;
+	/* flex-grow: 1; */
 	/* margin: 50px; */
 	display: flex;
 	/* align-items: center; */
@@ -827,14 +827,16 @@ li {
 /* Publish Section */
 
 #publish{
+	min-height: 90vh;
 	background: rgb(0, 0, 0, 0.2);
 	padding: 50px;
-	height: 90vh;
+	/* height: unset; */
 }
 
 #publish-container{
-	display: flex;
-	height: -webkit-fill-available;
+	min-height: auto;
+	/* display: flex; */
+	/* height: -webkit-fill-available; */
 }
 
 #publish-buttons-container {
