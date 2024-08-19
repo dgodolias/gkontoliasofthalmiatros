@@ -538,6 +538,7 @@ min-height: inherit;
 }
 
 #intro-container {
+	/* height: 100%; */
 	justify-content: center;
 	margin: 0px;
 	width: -webkit-fill-available;
@@ -895,6 +896,15 @@ li {
 
 
 
+@media (max-width: 3270px) {
+
+}
+
+@media (max-width: 2180px) {
+
+}
+
+
 @media (max-width: 1090px) {
 	#menu a.navbar-brand {
 		font-size: 20px;
@@ -932,7 +942,7 @@ li {
 	li,
 	p {
 		width: 100%;
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	#menu a.navbar-brand {

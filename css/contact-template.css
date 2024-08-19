@@ -64,6 +64,7 @@ img {
 }
 
 .mb-4 {
+    color: black;
     margin-bottom: 1.5rem !important;
     font-size: medium;
 }
@@ -78,12 +79,13 @@ img {
 }
 
 .info-wrap .dbox p {
+    color: black;
     margin-bottom: 0;
     font-size: medium;
 }
 
 .info-wrap .dbox p span {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     color: #000;
 }
