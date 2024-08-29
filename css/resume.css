@@ -1,12 +1,12 @@
-#resume {
-  border-radius: 20px;
-  margin: 30px;
-  background: white;
-  padding:30px;
-  min-width: 310px;
-  font: 16px Helvetica, Avernir, sans-serif;
-  line-height: 24px;
-  color: #ffffff
+#resume dt {
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  /* padding: 0 26px 0 0; */
+  width: fit-content;
+  border-right: 1px solid #999;
 }
 #resume h1 {
   color: rgb(97 97 97);
