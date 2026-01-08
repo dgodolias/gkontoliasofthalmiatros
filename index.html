@@ -1,379 +1,471 @@
-<html lang="en" style="height: auto;">
+<!DOCTYPE html>
+<html lang="el">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Οφθαλμολογικό Ιατρείο Γκοντόλια Στέργιου στα Χανιά. Πλήρης οφθαλμολογικός έλεγχος, χειρουργική καταρράκτη, γλαύκωμα, και παιδοοφθαλμολογία. Κλείστε ραντεβού σήμερα.">
+    <meta name="keywords"
+        content="οφθαλμίατρος, Χανιά, οφθαλμίατρος Χανιά, καταρράκτης, γλαύκωμα, μυωπία, αστιγματισμός, οφθαλμολογικό ιατρείο">
+    <meta name="author" content="Γκοντόλιας Στέργιος">
 
-  <title>Οφθαλμίατρος Γκοντόλιας</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta property="og:title" content="Οφθαλμίατρος Γκοντόλιας">
-  <meta property="og:description" content="Παρέχει ειδικές οφθαλμολογικές υπηρεσίες στην περιοχή των Χανίων, Κρήτης.">
-  <meta property="og:image" content="https://ofthalmiatros-chania.gr/img/thumbnail.jpg">
-  <meta property="og:url" content="https://ofthalmiatros-chania.gr">
-  <meta property="og:type" content="website">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ofthalmiatros-chania.gr/">
+    <meta property="og:title" content="Οφθαλμολογικό Ιατρείο - Γκοντόλιας Στέργιος | Χανιά">
+    <meta property="og:description" content="Σύγχρονη οφθαλμολογία στα Χανιά. Εξειδίκευση σε καταρράκτη και γλαύκωμα.">
+    <meta property="og:image" content="img/thumbnail.jpg">
 
+    <title>Οφθαλμίατρος Γκοντόλιας Στέργιος | Χανιά</title>
 
-  <!-- AppModel -->
-  <link rel="manifest" href="json/manifest.json">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Iframe resizer -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
+    <!-- Modern Styles -->
+    <link rel="stylesheet" href="css/modern-style.css">
 
-  <!-- Favicons
-    ================================================== -->
-  <link rel="icon" type="image/png" href="imgeye_logo-removebg-preview.png">
-  <link rel="shortcut icon" href="img/eye_logo-removebg-preview.png" type="image/x-icon">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/eye_logo-removebg-preview.png">
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-
-  <!-- Stylesheet
-    ================================================== -->
-
-  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
-  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  <!-- Rest styles -->
-  <link rel="stylesheet" type="text/css" href="css/intro-canvas.css">
-  <link rel="stylesheet" type="text/css" href="css/resume.css">
-  <link rel="stylesheet" type="text/css" href="css/contact-template.css">
-  <link rel="stylesheet" type="text/css" href="css/buttonappointment.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <!-- JSON-LD Schema for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Οφθαλμολογικό Ιατρείο Γκοντόλιας Στέργιος",
+      "image": "https://ofthalmiatros-chania.gr/img/photo4.jpg",
+      "@id": "https://ofthalmiatros-chania.gr",
+      "url": "https://ofthalmiatros-chania.gr",
+      "telephone": "+302821050396",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Κ. Μητσοτάκη 38",
+        "addressLocality": "Χανιά",
+        "addressRegion": "Κρήτη",
+        "postalCode": "73132",
+        "addressCountry": "GR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.5108897,
+        "longitude": 24.0247193
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
+      "sameAs": []
+    }
+    </script>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-  <div id="bg">
-    <canvas width="1385" height="902"></canvas>
-    <canvas width="1385" height="902"></canvas>
-    <canvas width="1385" height="902"></canvas>
-  </div>
-  <!-- Navigation
-    ==========================================-->
-  <nav id="menu" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-          data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
-            class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand page-scroll" href="#page-top">ΟΦΘΑΛΜΟΛΟΓΙΚΟ ΙΑΤΡΕΙΟ ΓΚΟΝΤΟΛΙΑ ΣΤΕΡΓΙΟΥ</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#header" class="page-scroll">ΤΟ ΙΑΤΡΕΙΟ</a></li>
-          <li class=""><a href="#episkepsi" class="page-scroll">ΕΠΙΣΚΕΨΗ</a></li>
-          <li class=""><a href="#thedoctor" class="page-scroll">Ο ΙΑΤΡΟΣ</a></li>
-          <li><a href="#biography" class="page-scroll">ΒΙΟΓΡΑΦΙΚΟ</a></li>
-          <li><a href="#publish" class="page-scroll">ΔΗΜΟΣΙΕΥΣΕΙΣ</a></li>
-          <li><a href="#contact" class="page-scroll">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
+<body id="page-top">
+    <!-- Background Canvas -->
+    <div id="bg" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        <canvas style="position: absolute; top:0; left:0;"></canvas>
+        <canvas style="position: absolute; top:0; left:0;"></canvas>
+        <canvas style="position: absolute; top:0; left:0;"></canvas>
     </div>
-  </nav>
-  <!-- Header -->
-  <header id="header">
-    <div class="intro">
-      <div class="overlay">
-        <div class="flex-container" id="intro-container">
-          <div class="container" id="intro-paragraph">
-            <div class="container">
-              <div class="flex-container">
-                <div class="intro-text">
-                  <h2 class="coloured-faded-text">ΙΑΤΡΙΚΕΣ ΥΠΗΡΕΣΙΕΣ</h2>
-                  <ul>
-                    <li>Πλήρης οφθαλμολογική εξέταση (οπτική οξύτητα, επισκόπηση προσθίων μορίων οφθαλμού, τονομέτρηση,
-                      βυθοσκόπηση)</li>
-                    <li>Εξέταση χρωματικής αντίληψης, οφθαλμοκινητικότητας και κορικών αντανακλαστικών</li>
-                    <li>Γλαύκωμα: προληπτικός έλεγχος - διάγνωση - θεραπεία (με οπτικά πεδία και παχυμετρία)</li>
-                    <li>Χειρουργική καταρράκτη (προεγχειρητικός έλεγχος, βιομετρία, μετεγχειρητική παρακολούθηση)</li>
-                    <li>Κλινικός έλεγχος παιδιών και ενηλίκων.</li>
-                  </ul>
-                </div>
-              </div>
 
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Γκοντόλιας Στέργιος MD</a>
+            <div class="nav-links">
+                <a href="#about">Ο Ιατρός</a>
+                <a href="#services">Υπηρεσίες</a>
+                <a href="#info">Πληροφορίες</a>
+                <a href="#contact">Επικοινωνία</a>
+                <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.5rem; color: white;">Ραντεβού</a>
             </div>
-          </div>
-          <div class="flex-container intro-profile-pic">
-            <!-- Carousel -->
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <!-- Carousel Background -->
+        <div class="carousel-container">
             <div class="carousel">
-              <img class="carousel-image" src="img/photo3.jpg"
-                style="opacity: 0; transition: opacity 4s ease-in-out, transform 4s ease-in-out; transform: translate(-100%, -50%) scale(0.5); position: absolute; top: 50%;">
-              <img class="carousel-image" src="img/photo4.jpg"
-                style="opacity: 1; transition: opacity 4s ease-in-out, transform 4s ease-in-out; transform: translate(0px, -50%) scale(1); position: absolute; top: 50%;">
-              <img class="carousel-image" src="img/photo5.jpg"
-                style="opacity: 0; transition: opacity 4s ease-in-out, transform 4s ease-in-out; transform: translate(-100%, -50%) scale(0.5); position: absolute; top: 50%;">
-              <img class="carousel-image" src="img/photo6.jpg"
-                style="opacity: 0; transition: opacity 4s ease-in-out, transform 4s ease-in-out; transform: translate(-100%, -50%) scale(0.5); position: absolute; top: 50%;">
-              <img class="carousel-image" src="img/photo8.jpg"
-                style="opacity: 0; transition: opacity 4s ease-in-out, transform 4s ease-in-out; transform: translate(-100%, -50%) scale(0.5); position: absolute; top: 50%;">
-
+                <!-- Photos from legacy site -->
+                <img class="carousel-image" src="img/photo4.jpg" alt="Slide 1">
+                <img class="carousel-image" src="img/photo3.jpg" alt="Slide 2">
+                <img class="carousel-image" src="img/photo5.jpg" alt="Slide 3">
+                <img class="carousel-image" src="img/photo6.jpg" alt="Slide 4">
+                <img class="carousel-image" src="img/photo8.jpg" alt="Slide 5">
             </div>
-            <!-- ---------- -->
-          </div>
+            <div class="hero-overlay"></div>
         </div>
 
-      </div>
-    </div>
-  </header>
-
-  <!-- episkepsi Section -->
-  <div id="episkepsi">
-    <div class="container" id="episkepsi-container">
-      <div class="row" id="service-row1">
-        <!-- ---------- -->
-        <div class="episkepsi-text">
-          <h2 class="coloured-faded-text">Λόγος Επίσκεψης</h2>
-          <ul>
-            <li>Επείγοντα περιστατικά (κόκκινος οφθαλμός με ή χωρίς πόνο, θολή όραση, εκκρίσεις κλπ)</li>
-            <li>Μέτρηση μυωπίας, υπερμετρωπίας και αστιγματισμού</li>
-            <li>Μέτρηση μυωπίας και συνταγογράφηση γυαλιών όρασης</li>
-            <li>Διερεύνηση για γλαύκωμα</li>
-            <li>Διερεύνηση για καταρράκτη</li>
-            <li>Διερεύνηση για παθήσεις αμφιβληστροειδούς</li>
-            <li>Προληπτικός έλεγχος παιδιών και ενηλίκων</li>
-            <li>Χορήγηση / ανανέωση άδειας οδήγησης αυτοκινήτου</li>
-          </ul>
-        </div>
-        <!-- ---------- -->
-        <div id="episkepsi-second-ul">
-          <div class="episkepsi-text">
-            <h2 class="coloured-faded-text">Εξετάσεις</h2>
-            <ul>
-              <li>Αυτόματη διαθλασιμετρία-κερατομετρία</li>
-              <li>Επισκόπηση στη σχισμοειδή λυχνία</li>
-              <li>Τονομέτρηση</li>
-              <li>Βυθοσκόπηση</li>
-              <li>Εξέταση χρωματικής αντίληψης, κορ. αντανακλαστικών οφθαλμοκινητικότητας</li>
-              <li>Αυτόματη περιμετρία (οπτικά πεδία)</li>
-              <li>Παχυμετρία</li>
-              <li>Βιομετρία</li>
-            </ul>
-          </div>
-        </div>
-        <div class="flex-container intro-profile-pic">
-          <div id="episkepsi-pic"></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <!-- thedoctor Section -->
-  <div id="thedoctor">
-    <div class="container">
-      <div class="flex-container" id="thedoctor-container">
-
-        <div class="container" id="memiamatia">
-          <div class="thedoctor-text">
-            <h1 class="coloured-faded-text">Ο ΙΑΤΡΟΣ</h1>
-            <div class="list-style">
-              <div class="">
-                <p>Ο χειρουργός οφθαλμίατρος ΓΚΟΝΤΟΛΙΑΣ ΣΤΕΡΓΙΟΣ διατηρεί ένα σύγχρονο και οργανωμένο ιατρείο στο κέντρο
-                  των Χανίων, από το 2019.
-
-                  Έχει αποφοιτήσει από το 2ο Λύκειο της Ξάνθης, έλαβε το πτυχίο Ιατρικής από το Αριστοτέλειο
-                  Πανεπιστήμιο Θεσσαλονίκης (όπου εισήχθη μετά από επιτυχείς Πανελλήνιες εξετάσεις) και ολοκλήρωσε την
-                  ειδικότητα της οφθαλμολογίας στο Πανεπιστημιακό Νοσοκομείο Ηρακλείου Κρήτης.
-
-                  Εργάστηκε ως Επιμελητής Οφθαλμολογίας ΕΣΥ στα Γενικά Νοσοκομεία Ρεθύμνου (2 έτη) και Χανίων (6 έτη),
-                  όπου αποκόμισε σημαντική κλινική και χειρουργική εμπειρία στη διάγνωση και αντιμετώπιση οφθαλμικών
-                  παθήσεων, ιδίως όσον αφορά την χειρουργική αφαίρεση του καταρράκτη (φακοθρυψία με υπερήχους).</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex-container intro-profile-pic">
-          <div id="profile-pic"></div>
-        </div>
-      </div>
-      <div class="container" id="resume-container">
-        <div id="resume">
-          <dl>
-            <dt>Επικοινωνία</dt>
-            <dd>
-              <ul>
-                <li>Ιδιωτικό Ιατρείο: Κ. Μητσοτάκη 38, Δικαστήρια, 73132 Χανιά, Κρήτη</li>
-                <li>Τηλέφωνο: 28210-50396, 6974701928</li>
-                <li>Email: stgodolias@gmail.com</li>
-              </ul>
-            </dd>
-          </dl>
-          <dl>
-            <dt>Εκπαίδευση</dt>
-            <dd>
-              <ul>
-                <li>Πτυχίο Ιατρικής: Αριστοτέλειο Πανεπιστήμιο Θεσσαλονίκης (ΑΠΘ)</li>
-                <li>Ειδικότητα Οφθαλμολογίας: Πανεπιστημιακό Νοσοκομείο Ηρακλείου Κρήτης</li>
-              </ul>
-            </dd>
-          </dl>
-          <dl>
-            <dt>Επαγγελματική Εμπειρία</dt>
-            <dd>
-              <ul>
-                <li>Ιδιώτης Οφθαλμίατρος: Χανιά, Κρήτη (2019-σήμερα)</li>
-                <li>Επιμελητής Οφθαλμολογίας στο γενικό νοσοκομείο Χανίων(6 έτη)</li>
-                <li>Επιμελητής Οφθαλμολογίας στο γενικό νοσοκομείο Ρεθύμνου(2 έτη)</li>
-              </ul>
-            </dd>
-          </dl>
-          <dl>
-            <dt>Κλινική Εμπειρία</dt>
-            <dd>
-              <ul>
-                <li>Χειρουργική Καταρράκτη: Πραγματοποίηση πληθώρας επεμβάσεων αφαίρεσης καταρράκτη.</li>
-                <li>Διάγνωση και θεραπεία παθήσεων βυθού με ενδοφθάλμιες ενέσεις.</li>
-                <li>Διερεύνηση και θεραπεία γλαυκώματος(με χρήση οπτικών πεδίων και παχυμετρίας).</li>
-              </ul>
-            </dd>
-          </dl>
-          <dl>
-            <dt>Ερευνητική Δραστηριότητα</dt>
-            <dd>
-              <ul>
-                <li>Συμμετοχή με ανακοινώσεις σε διεθνή και ελληνικά συνέδρια.</li>
-                <li>Δημοσιεύσεις σε έγκριτα ελληνικά περιοδικά.</li>
-              </ul>
-            </dd>
-          </dl>
-
-          <dl>
-            <dt>Γλώσσες</dt>
-            <dd>
-              <ul>
-                <li>Αγγλικά: Certificate of Proficiency in English (ECPE), Certificate in Advanced English (Level C1),
-                  First Certificate in English.</li>
-              </ul>
-            </dd>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Biography Section -->
-  <div id="biography">
-    <div class="container pdf-iframe-container">
-      <iframe src="files/pdf/CV_GKONTOLIAS_NoCopy.pdf" width="80%" height="100%"></iframe>
-    </div>
-  </div>
-  <!-- Publish Section -->
-  <div id="publish">
-    <div class="container" id="publish-container">
-      <div class="flex-container" id="publish-buttons-container">
-        <a class="d-1" onclick="changeIframeContent('files/pdf/1ΔΗΜΟΣΙΕΥΣΗ_ΑΡΘΡΟ_ΠΕΡΙΟΔΙΚΟΥ_NoCopy.pdf')">ΑΡΧΕΙΟ 1</a>
-        <a class="d-1" onclick="changeIframeContent('files/pdf/2ΔΗΜΟΣΙΕΥΣΗ_ΑΡΘΡΟ_ΠΕΡΙΟΔΙΚΟΥ_NoCopy.pdf')">ΑΡΧΕΙΟ 2</a>
-      </div>
-      <div class="container pdf-iframe-container">
-        <iframe id="pdf-iframe" src="files/pdf/1ΔΗΜΟΣΙΕΥΣΗ_ΑΡΘΡΟ_ΠΕΡΙΟΔΙΚΟΥ_NoCopy.pdf" width="80%"
-          height="100%"></iframe>
-      </div>
-    </div>
-  </div>
-
-  <!-- contact Section -->
-  <div id="contact">
-    <div class="flex-container">
-      <div class="container" id="contact-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.7325960936105!2d24.024719288174225!3d35.5108897687861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149c7dc1e7a18aed%3A0xa75a3171d7c624e4!2zzprPic69LiBNaXRzb3Rha2kgMzgsIM6nzrHOvc65zqwgNzMxIDMy!5e0!3m2!1sel!2sgr!4v1720588488634!5m2!1sel!2sgr"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="container" id="contact-info">
-        <div class="info-wrap-container" style="position: relative;">
-          <div class="background-container bg2"
-            style="width: 623px; position: absolute; border: 2px solid rgb(232, 235, 235); top: calc(-20px); left: calc(20px);">
-          </div>
-          <div class="background-container bg1"
-            style="width: 623px; position: absolute; border: 2px solid rgb(232, 235, 235); top: calc(-10px); left: calc(10px);">
-          </div>
-          <div class="info-wrap p-lg-5 p-4 img">
-            <h3> Επικοινωνία</h3>
-            <p class="mb-4">Ελάτε απο το ιατρείο, για την καλύτερη δυνατή εξυπηρέτηση στο πρόβλημα σας!</p>
-            <div class="dbox w-100 d-flex align-items-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="fa fa-map-marker"></span>
-              </div>
-              <div class="text pl-3">
-                <p><span>Διεύθυνση:</span> Κ. Μητσοτάκη 38, Δικαστήρια, 73132 Χανιά, Κρήτη</p>
-              </div>
-            </div>
-            <div class="dbox w-100 d-flex align-items-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="fa fa-phone"></span>
-              </div>
-              <div class="text pl-3">
-                <p><span>Τηλέφωνο:</span> <a href="tel://2821050396">+30 28210 50396</a></p>
-              </div>
-            </div>
-            <div class="dbox w-100 d-flex align-items-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="fa fa-paper-plane"></span>
-              </div>
-              <div class="text pl-3">
-                <p><span>Email:</span> <a href="mailto:stgodolias@gmail.com">stgodolias@gmail.com</a></p>
-              </div>
-            </div>
-            <div class="dbox w-100 d-flex align-items-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="fa fa-globe"></span>
-              </div>
-              <div class="text pl-3">
-                <p><span>Ιστοσελίδα</span> <a href="">ofthalmiatros-chania.gr</a></p>
-              </div>
+        <div class="container hero-content">
+            <p class="hero-tagline">Οφθαλμολογικό Ιατρείο Χανίων</p>
+            <h1 class="typing-text">Σύγχρονη Οφθαλμολογία στα Χανιά</h1>
+            <p>Εξειδικευμένη φροντίδα για την υγεία των ματιών σας, με συνέπεια και σεβασμό στον ασθενή.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary magnetic-btn">Κλειστε Ραντεβου</a>
+                <a href="#services" class="btn btn-outline magnetic-btn"
+                    style="color: white; border-color: white;">Υπηρεσιες</a>
             </div>
 
-          </div>
+            <!-- Stats Counter -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="600">0</span>+
+                    <span class="stat-label">Επεμβάσεις</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span>+
+                    <span class="stat-label">Έτη Εμπειρίας</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5000">0</span>+
+                    <span class="stat-label">Ασθενείς</span>
+                </div>
+            </div>
         </div>
 
-      </div>
-    </div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </header>
 
-  </div>
-  <!-- Footer Section -->
-  <div id="footer">
-    <div class="container text-center">
-      <p>Designed by TemplateWire Distributed By: <a class="" href="https://htmltemplates.co" target="_blank">HTML
-          Templates</a></p>
-      <p>Modified by <a href="mailto:dgodolias@gmail.com" target="_blank">Γκοντόλιας Δημοσθένης</a></p>
-    </div>
-  </div>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-  <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/SmoothScroll.js"></script>
-  <script type="text/javascript" src="js/nivo-lightbox.js"></script>
-  <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-  <script type="text/javascript" src="js/contact_me.js"></script>
-  <script type="text/javascript" src="js/index2.js"></script>
-  <script type="text/javascript" src="js/carousel.js"></script>
-  <script type="text/javascript" src="js/intro-canvas.js"></script>
-  <script type="text/javascript" src="js/contact_info_shape.js"></script>
-  <script type="text/javascript" src="js/pdfchangebuttons.js"></script>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Ο Ιατρός</h2>
+                <p>Γκοντόλιας Δ. Στέργιος - Χειρουργός Οφθαλμίατρος</p>
+            </div>
 
+            <div class="about-grid">
+                <!-- Info Column -->
+                <div class="about-info fade-in-left">
+                    <p class="lead">Ο κος Στέργιος Δήμου Γκοντόλιας είναι οφθαλμίατρος με πλούσια εμπειρία και
+                        εξειδίκευση.</p>
 
+                    <p>Αποφοίτησε από την Ιατρική Σχολή του Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης το 1997 και
+                        ολοκλήρωσε την ειδικότητα της οφθαλμολογίας στο Πανεπιστημιακό Νοσοκομείο Ηρακλείου Κρήτης το
+                        2009.</p>
 
-  <div style="clear: both;"></div>
+                    <p>Έχει εργαστεί ως Επιμελητής Οφθαλμολογίας ΕΣΥ στα Γενικά Νοσοκομεία Ρεθύμνου και Χανίων επί 8
+                        συναπτά έτη, αποκτώντας σημαντική κλινική εμπειρία. Διατηρεί ιδιωτικό ιατρείο στα Χανιά από το
+                        2019.</p>
+
+                    <div class="doctor-credentials">
+                        <div class="credential-item">
+                            <i class="fas fa-user-md"></i>
+                            <h4>Εξειδίκευση</h4>
+                            <p>Χειρουργική Καταρράκτη, Γλαύκωμα, Παθήσεις Βυθού</p>
+                        </div>
+                        <div class="credential-item">
+                            <i class="fas fa-hospital"></i>
+                            <h4>Εμπειρία</h4>
+                            <p>Άνω των 600 επεμβάσεων καταρράκτη & πολυετής θητεία στο ΕΣΥ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PDF Column -->
+                <div class="about-pdf fade-in-right">
+                    <div class="pdf-header">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Βιογραφικό Σημείωμα</span>
+                        <a href="files/pdf/CV_GKONTOLIAS_NoCopy.pdf" target="_blank" class="btn-download">
+                            <i class="fas fa-download"></i> Λήψη
+                        </a>
+                    </div>
+                    <div class="pdf-container">
+                        <iframe src="files/pdf/CV_GKONTOLIAS_NoCopy.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                            width="100%" height="100%"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light-blue">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Ιατρικές Υπηρεσίες</h2>
+                <p>Παρέχουμε ολοκληρωμένες υπηρεσίες διάγνωσης και θεραπείας για όλο το φάσμα των οφθαλμολογικών
+                    παθήσεων.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card fade-in-up">
+                    <div class="service-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Πλήρης Οφθαλμολογικός Έλεγχος</h3>
+                    <p>Μέτρηση οπτικής οξύτητας, διαθλασιμετρία, τονομέτρηση, και βυθοσκόπηση για παιδιά και ενήλικες.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card fade-in-up">
+                    <div class="service-icon"><i class="fas fa-procedures"></i></div>
+                    <h3>Χειρουργική Καταρράκτη</h3>
+                    <p>Σύγχρονη αφαίρεση καταρράκτη (φακοθρυψία) με υπερήχους. Προεγχειρητικός έλεγχος και βιομετρία.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card fade-in-up">
+                    <div class="service-icon"><i class="fas fa-chart-area"></i></div>
+                    <h3>Γλαύκωμα</h3>
+                    <p>Έγκαιρη διάγνωση, παρακολούθηση και θεραπεία με χρήση οπτικών πεδίων και παχυμετρίας.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card fade-in-up">
+                    <div class="service-icon"><i class="fas fa-baby"></i></div>
+                    <h3>Παιδοοφθαλμολογία</h3>
+                    <p>Προληπτικός έλεγχος (Screening) σε παιδιά για έγκαιρη ανίχνευση διαθλαστικών ανωμαλιών.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card fade-in-up">
+                    <div class="service-icon"><i class="fas fa-file-medical-alt"></i></div>
+                    <h3>Συνταγογράφηση</h3>
+                    <p>Χορήγηση γυαλιών όρασης, φακών επαφής και φαρμακευτικής αγωγής μέσω ΕΟΠΥΥ.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card fade-in-up">
+                    <div class="service-icon"><i class="fas fa-car"></i></div>
+                    <h3>Άδειες Οδήγησης</h3>
+                    <p>Πιστοποιημένος ιατρός για χορήγηση και ανανέωση αδειών οδήγησης (διπλώματα).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info / Equipment Section -->
+    <section id="info" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Σύγχρονος Εξοπλισμός</h2>
+                <p>Το ιατρείο μας είναι εξοπλισμένο με μηχανήματα τελευταίας τεχνολογίας για ακριβής διαγνώσεις.</p>
+            </div>
+            <div class="equipment-list fade-in-up">
+                <ul style="max-width: 600px; font-size: 1.1rem; color: var(--text-dark);">
+                    <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle"
+                            style="color: var(--primary-color); margin-right: 10px;"></i> Αυτόματη διαθλασιμετρία -
+                        κερατομετρία</li>
+                    <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle"
+                            style="color: var(--primary-color); margin-right: 10px;"></i> Ψηφιακή σχισμοειδής λυχνία
+                    </li>
+                    <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle"
+                            style="color: var(--primary-color); margin-right: 10px;"></i> Αυτόματη περιμετρία (Οπτικά
+                        Πεδία)</li>
+                    <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle"
+                            style="color: var(--primary-color); margin-right: 10px;"></i> Παχυμετρία κερατοειδούς</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-off-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Επικοινωνία & Ραντεβού</h2>
+                <p>Θα χαρούμε να σας εξυπηρετήσουμε στο ιατρείο μας.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-panel">
+                    <h2>Στοιχεία Επικοινωνίας</h2>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-details">
+                            <h4>Διευθυνση</h4>
+                            <p>Κ. Μητσοτάκη 38, Δικαστήρια<br>73132 Χανιά, Κρήτη</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-details">
+                            <h4>Τηλεφωνο</h4>
+                            <p><a href="tel:+302821050396">28210 50396</a></p>
+                            <p><a href="tel:+306974701928">697 470 1928</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:stgodolias@gmail.com">stgodolias@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 3rem;">
+                        <h4 style="color: var(--accent-color); margin-bottom: 1rem; text-transform: uppercase;">Ωραριο
+                            Λειτουργιας</h4>
+                        <p style="color: rgba(255,255,255,0.8);">Δευτέρα - Παρασκευή: Κατόπιν Ραντεβού</p>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.7325960936105!2d24.024719288174225!3d35.5108897687861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149c7dc1e7a18aed%3A0xa75a3171d7c624e4!2zzprPic69LiBNaXRzb3Rha2kgMzgsIM6nzrHOvc65zqwgNzMxIDMy!5e0!3m2!1sel!2sgr!4v1720588488634!5m2!1sel!2sgr"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Γκοντόλιας Στέργιος MD</div>
+                <p>Οφθαλμολογικό Ιατρείο στα Χανιά</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Γκοντόλιας Στέργιος. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery.1.11.1.js"></script>
+    <script src="js/intro-canvas.js"></script>
+    <script src="js/carousel.js"></script>
+    <script>
+        // Simple Mobile Menu Toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '70px';
+                navLinks.style.left = '0';
+                navLinks.style.width = '100%';
+                navLinks.style.background = 'white';
+                navLinks.style.padding = '1rem';
+                navLinks.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+            }
+        });
+
+        // Premium Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .fade-in-up, .fade-in-left, .fade-in-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ========== ULTRA PREMIUM EFFECTS ==========
+
+        // Counter Animation
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = parseInt(counter.dataset.target);
+                    const duration = 2000;
+                    const step = target / (duration / 16);
+                    let current = 0;
+
+                    const updateCounter = () => {
+                        current += step;
+                        if (current < target) {
+                            counter.textContent = Math.floor(current);
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counter.textContent = target;
+                        }
+                    };
+                    updateCounter();
+                    counterObserver.unobserve(counter);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number').forEach(el => counterObserver.observe(el));
+
+        // Magnetic Buttons
+        document.querySelectorAll('.magnetic-btn').forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+            });
+
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'translate(0, 0)';
+            });
+        });
+
+        // Parallax Effect on Hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero-content');
+            if (hero && scrolled < window.innerHeight) {
+                hero.style.transform = `translateY(${scrolled * 0.4}px)`;
+                hero.style.opacity = 1 - (scrolled / 700);
+            }
+        });
+
+        // Tilt Effect on Service Cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = (y - centerY) / 20;
+                const rotateY = (centerX - x) / 20;
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-15px)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+            });
+        });
+
+        // Smooth Reveal for Section Headers
+        document.querySelectorAll('.section-header h2').forEach(h2 => {
+            h2.style.backgroundSize = '200% 100%';
+        });
+    </script>
 </body>
 
 </html>
