@@ -93,6 +93,36 @@ img {
     background-color: rgba(238, 247, 252, 0.98);
 }
 
+/* TRANSPARENT SECTIONS - Show background through */
+.section-transparent {
+    background-color: rgba(14, 77, 100, 0.5);
+}
+
+.section-transparent .section-header h2 {
+    color: white;
+}
+
+.section-transparent .section-header h2::after {
+    background: linear-gradient(90deg, var(--accent-color), white);
+}
+
+.section-transparent .section-header p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.section-transparent .service-card {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.section-transparent .equipment-list ul {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+/* Contact section within transparent - keep the grid visible */
+.section-transparent .contact-grid {
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
 /* ===== PREMIUM SCROLL ANIMATIONS ===== */
 .fade-in,
 .fade-in-up,
@@ -262,6 +292,15 @@ img {
 
 .nav-links a:hover {
     color: var(--primary-color);
+}
+
+/* Active Nav Link (Scroll Spy) */
+.nav-links a.active {
+    color: var(--primary-color);
+}
+
+.nav-links a.active::after {
+    width: 100%;
 }
 
 .mobile-menu-btn {
