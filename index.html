@@ -204,26 +204,18 @@
             <!-- Stats Counter -->
             <div class="hero-stats">
                 <div class="stat-item">
-                    <span class="stat-number" data-target="600">0</span>+
-                    <span class="stat-label">Επεμβάσεις</span>
+                    <span class="stat-number stat-text">Πληθώρα</span>
+                    <span class="stat-label">Επεμβάσεων</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number" data-target="15">0</span>+
+                    <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
                     <span class="stat-label">Έτη Εμπειρίας</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number" data-target="5000">0</span>+
+                    <span class="stat-number" data-target="5000">0</span><span class="stat-plus">+</span>
                     <span class="stat-label">Ασθενείς</span>
                 </div>
             </div>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <span>Scroll</span>
         </div>
     </header>
 
@@ -500,7 +492,7 @@
             });
         }, { threshold: 0.5 });
 
-        document.querySelectorAll('.stat-number').forEach(el => counterObserver.observe(el));
+        document.querySelectorAll('.stat-number[data-target]').forEach(el => counterObserver.observe(el));
 
         // Magnetic Buttons
         document.querySelectorAll('.magnetic-btn').forEach(btn => {

@@ -217,7 +217,7 @@ img {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    background: linear-gradient(135deg, #64620e, #d0d0d0);
     color: white;
     box-shadow: 0 6px 20px rgba(14, 77, 100, 0.35);
 }
@@ -413,6 +413,11 @@ img {
 
 .stat-item {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 120px;
 }
 
 .stat-number {
@@ -420,8 +425,16 @@ img {
     font-size: 3rem;
     font-weight: 700;
     color: white;
-    display: block;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 3.5rem;
     line-height: 1;
+}
+
+.stat-number.stat-text {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
 }
 
 .stat-label {
@@ -431,6 +444,25 @@ img {
     color: rgba(255, 255, 255, 0.8);
     margin-top: 0.5rem;
     display: block;
+    width: 100%;
+}
+
+/* Plus sign next to numbers */
+.stat-plus {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+    display: inline-flex;
+    align-items: flex-end;
+    height: 3.5rem;
+}
+
+/* Stat row layout for number + plus alignment */
+.stat-item .stat-number,
+.stat-item .stat-plus {
+    display: inline-flex;
 }
 
 /* Scroll Indicator */
