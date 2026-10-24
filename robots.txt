@@ -1,0 +1,22 @@
+# ofthalmiatros-chania.gr
+# All crawlers, including AI search crawlers, may index the site.
+User-agent: *
+Allow: /
+
+# AI search engines (explicitly allowed)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://ofthalmiatros-chania.gr/sitemap.xml
